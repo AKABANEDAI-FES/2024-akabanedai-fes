@@ -1,47 +1,47 @@
 {
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
-  "formatter": { "enabled": true, "useEditorconfig": true },
-  "organizeImports": { "enabled": true },
-  "files": {
-    "ignore": ["public"]
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "all": true,
-      "correctness": {
-        "useImportExtensions": "off",
-        "noUndeclaredDependencies": "off"
-      },
-      "performance": {
-        "useTopLevelRegex": "off",
-        "noBarrelFile": "off"
-      },
-      "style": {
-        "noDefaultExport": "off",
-        "useFilenamingConvention": {
-          "level": "error",
-          "options": {
-            "filenameCases": ["kebab-case"]
-          }
-        },
-        "noNamespaceImport": "off"
-      },
-      "suspicious": {
-        "noReactSpecificProps": "off"
-      }
-    }
-  },
-  "javascript": {
-    "formatter": { "quoteStyle": "double" },
-    "globals": ["React"]
-  },
-  "json": {
-    "parser": { "allowComments": true }
-  }
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"formatter": { "enabled": true, "useEditorconfig": true },
+	"organizeImports": { "enabled": true },
+	"files": {
+		"ignore": ["public"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"correctness": {
+				"useImportExtensions": "off",
+				"noUndeclaredDependencies": "off"
+			},
+			"performance": {
+				"useTopLevelRegex": "off",
+				"noBarrelFile": "off"
+			},
+			"style": {
+				"noDefaultExport": "off",
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"filenameCases": ["kebab-case"]
+					}
+				},
+				"noNamespaceImport": "off"
+			},
+			"suspicious": {
+				"noReactSpecificProps": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": { "quoteStyle": "double" },
+		"globals": ["React"]
+	},
+	"json": {
+		"parser": { "allowComments": true }
+	}
 }
