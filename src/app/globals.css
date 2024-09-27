@@ -1,7 +1,6 @@
 @layer reset, base;
 
-@import url("https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css")
-	layer(reset);
+@import url("reset.css") layer(reset);
 
 @layer base {
 	:root {
