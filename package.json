@@ -3,7 +3,10 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
+		"prepare": "hcm '**/*.module.css'",
+		"dev": "run-p dev:*",
+		"dev:next": "next dev",
+		"dev:hcm": "hcm '**/*.module.css' --watch",
 		"build": "next build",
 		"start": "next start",
 		"lint": "biome check",
@@ -19,6 +22,8 @@
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
+		"happy-css-modules": "^3.1.1",
+		"npm-run-all2": "^6.2.3",
 		"typescript": "^5"
 	}
 }
