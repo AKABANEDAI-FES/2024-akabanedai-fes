@@ -37,3 +37,7 @@ next-env.d.ts
 
 # happy css modules
 **/*.css.d.ts*
+
+# vscode
+.vscode/*
+!.vscode/extensions.json
