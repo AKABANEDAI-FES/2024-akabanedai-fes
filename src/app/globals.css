@@ -1,0 +1,27 @@
+@layer reset, base;
+
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css")
+	layer(reset);
+
+@layer base {
+	:root {
+		--color-red: 150, 23, 23;
+		--color-blue: 43, 94, 115;
+		--color-white: 254, 248, 236;
+
+		--color-primary: rgb(var(--color-red));
+		--color-secondary: rgb(var(--color-blue));
+		--color-base: rgb(var(--color-white));
+		--color-text: #000;
+		--color-fill: #fff;
+
+		--font-sans: sans-serif;
+		--font-serif: serif;
+	}
+
+	html {
+		background-color: var(--color-base);
+		font-family: var(--font-sans);
+		min-height: 100dvb;
+	}
+}
