@@ -1,0 +1,43 @@
+.container {
+	width: 100%;
+}
+
+.access {
+	max-width: 1280px;
+	margin-inline: auto;
+	display: grid;
+	column-gap: 48px;
+	row-gap: 24px;
+}
+
+.description {
+	margin-inline: 16px;
+}
+
+.description > * + * {
+	margin-top: 16px;
+}
+
+.description h3 {
+	font-size: 20px;
+}
+
+.description h3 ~ h3 {
+	margin-top: 32px;
+}
+
+.description li {
+	margin-left: 16px;
+	list-style-type: disc;
+}
+
+@media screen and (min-width: 768px) {
+	.access {
+		grid-template-columns: 1fr 1fr;
+		padding-inline: 32px;
+	}
+
+	.description {
+		margin-inline: 0;
+	}
+}
