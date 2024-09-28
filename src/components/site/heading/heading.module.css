@@ -1,0 +1,5 @@
+.heading {
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	text-align: center;
+	font-family: var(--font-serif);
+}
