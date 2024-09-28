@@ -1,3 +1,17 @@
+import { Access } from "@/components/site/access";
+import { Challenge } from "@/components/site/challenge";
+import { Footer } from "@/components/site/footer";
+import { Hero } from "@/components/site/hero";
+import { Sponsor } from "@/components/site/sponsor";
+
 export default function Home() {
-	return <></>
+	return (
+		<>
+			<Hero />
+			<Challenge />
+			<Access />
+			<Sponsor />
+			<Footer />
+		</>
+	);
 }
