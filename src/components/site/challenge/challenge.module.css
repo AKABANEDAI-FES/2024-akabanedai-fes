@@ -1,0 +1,27 @@
+.challenge {
+	width: 100%;
+	display: grid;
+	gap: 16px;
+	place-content: center;
+	place-items: start;
+	writing-mode: vertical-rl;
+	font-family: var(--font-serif);
+}
+
+/* viewport: min 300px, max 1000px */
+.heading {
+	font-size: clamp(2rem, 0.929rem + 5.71vw, 4.5rem); /* values: min 32px, max 72px */
+	margin-left: clamp(1.75rem, 1rem + 4vw, 3.5rem); /* values: min 28px, max 56px */
+}
+
+.paragraph {
+	font-size: clamp(1rem, 0.679rem + 1.71vw, 1.75rem); /* min 16px, max 28px */
+	margin-top: calc(
+		clamp(2rem, 0.929rem + 5.71vw, 4.5rem) +
+		clamp(1rem, 0.679rem + 1.71vw, 1.75rem)
+	);
+}
+
+.paragraph + .paragraph {
+	margin-right: clamp(1rem, 0.786rem + 1.14vw, 1.5rem); /* min 16px, max 24px */
+}
