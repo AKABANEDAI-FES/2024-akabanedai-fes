@@ -1,0 +1,9 @@
+.section {
+	width: 100%;
+	margin-top: 128px;
+	padding-bottom: 48px;
+}
+
+.section > * + * {
+	margin-top: 48px;
+}
