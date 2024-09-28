@@ -5,8 +5,8 @@
 ## Development
 
 ```bash
-bun i
-bun dev
+pnpm i
+pnpm dev
 ```
 
 ## Recommended VSCode Settings
