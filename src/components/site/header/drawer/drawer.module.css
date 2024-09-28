@@ -1,0 +1,135 @@
+.trigger {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	color: var(--color-fill);
+	display: block;
+	z-index: 3;
+	pointer-events: auto;
+	transition: color 0.3s ease-in-out;
+}
+
+.trigger[data-state="open"] {
+	color: var(--color-text);
+}
+
+.icon {
+	position: absolute;
+	width: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.line {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: currentColor;
+	position: absolute;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.line:nth-child(1) {
+	top: -6px;
+}
+
+.line:nth-child(2) {
+	top: 0;
+}
+
+.line:nth-child(3) {
+	top: 6px;
+}
+
+.trigger[data-state="open"] .line:nth-child(1) {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+.trigger[data-state="open"] .line:nth-child(2) {
+	opacity: 0;
+}
+
+.trigger[data-state="open"] .line:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+.backdrop {
+	height: 100dvh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: var(--color-base);
+}
+
+.backdrop[data-state="open"]:global {
+	animation: fade-in 0.3s ease-in-out;
+}
+
+.backdrop[data-state="closed"]:global {
+	animation: fade-out 0.3s ease-in-out;
+}
+
+.positioner {
+	height: 100dvh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.content {
+	position: relative;
+	height: 100%;
+}
+
+.content::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.content[data-state="open"]::after {
+	animation: blur-out 0.5s ease-in-out;
+}
+
+.content[data-state="closed"]::after {
+	animation: blur-in 0.3s ease-in-out;
+}
+
+@keyframes blur-in {
+	from {
+		backdrop-filter: blur(0);
+	}
+	to {
+		backdrop-filter: blur(16px);
+	}
+}
+
+@keyframes blur-out {
+	from {
+		backdrop-filter: blur(16px);
+	}
+	to {
+		backdrop-filter: blur(0);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.trigger {
+		display: none;
+	}
+
+	.backdrop {
+		display: none;
+	}
+
+	.positioner {
+		display: none;
+	}
+}
