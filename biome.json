@@ -30,7 +30,13 @@
 						"filenameCases": ["kebab-case"]
 					}
 				},
-				"noNamespaceImport": "off"
+				"noNamespaceImport": "off",
+				"useNamingConvention": {
+					"level": "warn",
+					"options": {
+						"strictCase": false
+					}
+				}
 			},
 			"suspicious": {
 				"noReactSpecificProps": "off"
