@@ -3,7 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"prepare": "hcm '**/*.module.css'",
+		"prepare": "run-s prepare:*",
+		"prepare:hcm": "hcm '**/*.module.css'",
+		"prepare:lefthook": "lefthook install",
 		"dev": "run-p dev:*",
 		"dev:next": "next dev",
 		"dev:hcm": "hcm '**/*.module.css' --watch",
@@ -36,6 +38,7 @@
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
 		"happy-css-modules": "^3.1.1",
+		"lefthook": "^1.7.17",
 		"npm-run-all2": "^6.2.3",
 		"postcss": "^8.4.47",
 		"postcss-import": "^16.1.0",
