@@ -3,7 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"prepare": "hcm '**/*.module.css'",
+		"prepare": "run-s prepare:*",
+		"prepare:hcm": "hcm '**/*.module.css'",
+		"prepare:lefthook": "lefthook install",
 		"dev": "run-p dev:*",
 		"dev:next": "next dev",
 		"dev:hcm": "hcm '**/*.module.css' --watch",
