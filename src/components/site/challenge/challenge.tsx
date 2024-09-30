@@ -6,12 +6,7 @@ export function Challenge() {
 		<Section>
 			<div className={styles.challenge}>
 				<h2 className={styles.heading}>挑戦</h2>
-				<p className={styles.paragraph}>
-					あのイーハトーヴォの すきとおった風、
-				</p>
-				<p className={styles.paragraph}>夏でも底に冷たさをもつ青いそら、</p>
-				<p className={styles.paragraph}>うつくしい森で飾られたモリーオ市、</p>
-				<p className={styles.paragraph}>郊外のぎらぎらひかる草の波。</p>
+				<p className={styles.paragraph}>共に挑み、共に楽しむ</p>
 			</div>
 		</Section>
 	);
