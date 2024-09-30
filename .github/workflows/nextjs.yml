@@ -66,6 +66,8 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Build with Next.js
         run: pnpm run build
+        env:
+          ROBOTS: "noindex, nofollow"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
