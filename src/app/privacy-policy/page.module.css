@@ -1,0 +1,41 @@
+.privacy-policy {
+	padding-block: 60px;
+	padding-inline: 24px;
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+.privacy-policy > * + * {
+	margin-top: 24px;
+}
+
+.privacy-policy h1 {
+	font-size: 32px;
+}
+
+.privacy-policy h2 {
+	font-size: 24px;
+}
+
+.privacy-policy h3 {
+	font-size: 20px;
+}
+
+.privacy-policy a {
+	color: var(--color-secondary);
+}
+
+.privacy-policy a + a {
+	margin-left: 16px;
+}
+
+.privacy-policy a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+	.privacy-policy {
+		padding-block: 80px;
+		padding-inline: 32px;
+	}
+}
