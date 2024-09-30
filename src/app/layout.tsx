@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/site/header";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ja">
-			{process.env.GA_ID &&<GoogleAnalytics gaId={process.env.GA_ID} />}
+			{process.env.GA_ID && <GoogleAnalytics gaId={process.env.GA_ID} />}
 			<body>
 				<Header />
 				{children}
