@@ -15,10 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ja">
-
 			<GoogleAnalytics gaId="G-ERBGXM427W" />
-
-
 			<body>
 				<Header />
 				{children}
