@@ -34,9 +34,9 @@ export function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<nav className={styles.sitemap}>
-				<a href="/" className={styles.top}>
+				<Link href="/" className={styles.top}>
 					第八回 赤羽台祭
-				</a>
+				</Link>
 				<ul className={styles.links}>
 					{navigation.map(({ title, href }) => (
 						<li key={title}>
