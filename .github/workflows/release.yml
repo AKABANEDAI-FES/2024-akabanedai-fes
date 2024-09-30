@@ -15,7 +15,10 @@ concurrency:
 
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -50,4 +53,5 @@ jobs:
         with:
           files: out.zip
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: ${{ github.sha }}
+          name: ${{ github.run_id }}
+          tag_name: ${{ github.run_id }}
