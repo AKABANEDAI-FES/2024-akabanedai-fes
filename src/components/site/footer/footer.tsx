@@ -41,7 +41,7 @@ export function Footer() {
 					{navigation.map(({ title, href }) => (
 						<li key={title}>
 							{href ? (
-								<a href={href}>{title}</a>
+								<Link href={href}>{title}</Link>
 							) : (
 								<span className={styles.disabled}>{title}</span>
 							)}

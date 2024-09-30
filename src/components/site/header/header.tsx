@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Drawer } from "./drawer";
 import styles from "./header.module.css";
@@ -36,21 +37,21 @@ export function Header() {
 			{pathname === "/" ? (
 				<h1 className={styles.logo}>{site}</h1>
 			) : (
-				<a className={styles.logo} href="/" aria-label={site}>
+				<Link className={styles.logo} href="/" aria-label={site}>
 					{site}
-				</a>
+				</Link>
 			)}
 			<nav>
 				<ul className={styles.nav}>
 					{navigation.map(({ title, href }) => (
 						<li key={title}>
 							{href ? (
-								<a
+								<Link
 									href={href}
 									aria-current={href === pathname ? "page" : undefined}
 								>
 									{title}
-								</a>
+								</Link>
 							) : (
 								<span className={styles.disabled}>{title}</span>
 							)}
@@ -63,12 +64,12 @@ export function Header() {
 					{navigation.map(({ title, href }) => (
 						<li key={title}>
 							{href ? (
-								<a
+								<Link
 									href={href}
 									aria-current={href === pathname ? "page" : undefined}
 								>
 									{title}
-								</a>
+								</Link>
 							) : (
 								<span className={styles.disabled}>{title}</span>
 							)}
