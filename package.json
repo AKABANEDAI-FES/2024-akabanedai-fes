@@ -18,6 +18,7 @@
 	},
 	"dependencies": {
 		"@ark-ui/react": "^4.0.0",
+		"@next/third-parties": "^14.2.13",
 		"clsx": "^2.1.1",
 		"next": "14.2.13",
 		"react": "^18",
