@@ -68,6 +68,7 @@ jobs:
         run: pnpm run build
         env:
           ROBOTS: "noindex, nofollow"
+          METADATA_BASE: https://${{ github.repository_owner }}.github.io
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
