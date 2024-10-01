@@ -20,6 +20,7 @@ export function Drawer({ children }: Props) {
 				className={styles.trigger}
 				onClick={handleOpenToggle}
 				data-state={open ? "open" : "closed"}
+				aria-label={open ? "閉じる" : "メニューを開く"}
 			>
 				<div className={styles.icon}>
 					<span className={styles.line} />
