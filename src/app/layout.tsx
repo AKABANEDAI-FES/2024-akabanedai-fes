@@ -5,12 +5,13 @@ import path from "node:path";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import nextConfig from "../../next.config.mjs";
 
 export const metadata: Metadata = {
 	metadataBase: process.env.METADATA_BASE
 		? new URL(process.env.METADATA_BASE)
 		: undefined,
-	manifest: path.join(process.env.BASE_PATH || "", "/manifest.webmanifest"),
+	manifest: path.join(nextConfig.basePath || "", "/manifest.webmanifest"),
 	title: "赤羽台祭",
 	description:
 		"東洋大学赤羽台キャンパス大学祭「赤羽台祭」は、2024/11/02(土), 03(日)に開催！",
