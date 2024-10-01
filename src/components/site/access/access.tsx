@@ -9,7 +9,7 @@ export function Access() {
 			<div className={styles.access}>
 				<iframe
 					title="アクセスマップ"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.4041245929607!2d139.71517829999996!3d35.780086299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018931933794e07%3A0x9eb0830bc8f97e90!2z44CSMTE1LTAwNTMg5p2x5Lqs6YO95YyX5Yy66LWk57695Y-w77yR5LiB55uu77yX!5e0!3m2!1sja!2sjp!4v1727509106297!5m2!1sja!2sjp"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.1999361333562!2d139.71490256964935!3d35.78029518627614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018931934050759%3A0x239ff01917c6ae5a!2z5p2x5rSL5aSn5a2mIOaDheWgsemAo-aQuuWtpumDqCAoSU5JQUQgSFVCLTEp!5e0!3m2!1sja!2sjp!4v1727791565666!5m2!1sja!2sjp"
 					allowFullScreen={true}
 					width="100%"
 					height="500"
@@ -18,7 +18,7 @@ export function Access() {
 				/>
 				<div className={styles.description}>
 					<h3>住所</h3>
-					<p>〒115-0053 東京都北区赤羽台１丁目７</p>
+					<p>〒115-8650 東京都北区赤羽台1丁目7-11</p>
 					<h3>最寄り駅からのアクセス</h3>
 					<ul>
 						<li>JR赤羽駅西口 徒歩10分</li>
