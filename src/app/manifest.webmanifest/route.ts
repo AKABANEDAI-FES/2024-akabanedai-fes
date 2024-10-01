@@ -21,7 +21,7 @@ export function GET() {
 					type: "image/png",
 				},
 			],
-			theme_color: "#d11026",
+			theme_color: "#961717",
 			background_color: "#fef8ec",
 			start_url: path.join(nextConfig.basePath || "", "/"),
 			display: "standalone",
