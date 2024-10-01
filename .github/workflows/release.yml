@@ -43,6 +43,7 @@ jobs:
         env:
           METADATA_BASE: https://akabanedai-fes.com
           GA_ID: G-ERBGXM427W
+          BASE_PATH: /08
 
       - name: Compress
         shell: bash
