@@ -1,0 +1,9 @@
+.br{
+  display: none;
+}
+
+@media screen and (max-width: 628px) {
+  .br{
+    display: inline-flex;
+  }
+}
