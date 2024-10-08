@@ -1,20 +1,12 @@
-import { Section } from "../section";
-import styles from "./admissionInfo.module.css";
-import "./admissionInfo.module.css"
-import { Heading } from "../heading";
+import { Guide } from "../guide/guide";
 
 export function AdmissionInfo() {
-  return (
-    <Section className={styles.section}>
-      <div className={styles.admmissionInfo}>
-       <Heading className={styles.heading}>入場について</Heading>
-
-        <ul className={styles.list}>
-          <li className={styles.listItem}>事前予約やチケットは不要です</li>
-          <li className={styles.listItem}>入場料は無料です。(※ 一部体験や飲食出店は有料です。)</li>
-          <li className={styles.listItem}>駐車場はございませんので、お車でのご来場はご遠慮ください。</li>
-        </ul>
-      </div>
-    </Section>
-  )
+  const headingText:string = '入場について';
+  const admissionInfo:string[] = [
+    '事前予約やチケットは不要です',
+    "入場料は無料です。(※ 一部体験や飲食出店は有料です。)",
+    "駐車場はございませんので、お車でのご来場はご遠慮ください。"
+  ]
+  
+  return <Guide headingText={headingText} listItem={admissionInfo} />;
 }
