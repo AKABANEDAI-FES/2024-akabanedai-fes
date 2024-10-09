@@ -1,13 +1,15 @@
-// import { Access } from "@/components/site/access";
 import { AdmissionInfo } from "@/components/site/admissionInfo";
 import { Guidelines } from "@/components/site/guidelines";
 import { HelpAndSupport } from "@/components/site/helpAndSupport";
+import { Heading } from "@/components/site/heading";
+
 export default function Page() {
   return (
     <>
+      <Heading>ご来場の皆様へ</Heading>
       <AdmissionInfo />
       <Guidelines />
-      <HelpAndSupport/>
+      <HelpAndSupport />
     </>
   );
 }
