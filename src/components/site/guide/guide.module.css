@@ -1,28 +1,30 @@
-.section{
-  margin: auto;
-  max-width: 1200px;
-
-}
-.heading{
-  text-align: center;
-  font-size: clamp(2rem, 1.571rem + 2.29vw, 2rem);
-  color: #951717;
-  font-weight: bold;
-  border-bottom: #951717 solid 3px;
-  border-radius: 5px;
-  padding: 5px;
+.section {
+	margin: auto;
+	max-width: 1200px;
 }
 
-.listItem{
- list-style: disc; 
- margin: 1.2em;
+.heading {
+	text-align: center;
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 2rem);
+	color: var(--color-primary);
+	font-weight: bold;
+	border-bottom: var(--color-primary) solid 3px;
+	border-radius: 5px;
+	padding: 5px;
 }
-.guideInfo{
-  border: solid #951717 3px ;
-  border-radius: 8px;
-  background-color: white;
-  margin: 5%;
+
+.listItem {
+	list-style: disc;
+	margin: 1.2em;
 }
-.contents{
-  margin: 20px;
+
+.guideInfo {
+	border: solid var(--color-primary) 3px;
+	border-radius: 8px;
+	background-color: var(--color-fill);
+	margin: 5%;
+}
+
+.contents {
+	margin: 20px;
 }
