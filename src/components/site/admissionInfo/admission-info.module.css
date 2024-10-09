@@ -1,28 +1,29 @@
-.section{
+.section {
   margin: auto;
   max-width: 800px;
-
 }
-.heading{
-  
+
+.heading {
+
   color: #951717;
   font-weight: bold;
   border-bottom: #951717 solid 3px;
   border-radius: 5px;
   padding: 5px;
-  
 }
-.list{
+
+.list {
   margin: 30px;
   line-height: 2em
 }
-.listItem{
- list-style: disc; 
+
+.listItem {
+  list-style: disc;
 }
-.admmissionInfo{
-  border: solid #951717 3px ;
+
+.admmissionInfo {
+  border: solid #951717 3px;
   border-radius: 8px;
   background-color: white;
   margin: 5%;
 }
-

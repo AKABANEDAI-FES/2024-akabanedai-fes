@@ -1,1 +1,0 @@
-export { HelpAndSupport } from "./helpAndSupport";

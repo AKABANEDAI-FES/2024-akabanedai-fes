@@ -1,9 +1,9 @@
-.br{
+.br {
   display: none;
 }
 
 @media screen and (max-width: 628px) {
-  .br{
+  .br {
     display: inline-flex;
   }
 }

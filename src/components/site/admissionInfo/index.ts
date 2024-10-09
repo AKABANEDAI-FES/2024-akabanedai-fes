@@ -1,1 +1,1 @@
-export { AdmissionInfo } from "./admissionInfo";
+export { AdmissionInfo } from "./admission-info";

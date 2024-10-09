@@ -1,6 +1,6 @@
 import { AdmissionInfo } from "@/components/site/admissionInfo";
 import { Guidelines } from "@/components/site/guidelines";
-import { HelpAndSupport } from "@/components/site/helpAndSupport";
+import { HelpAndSupport } from "@/components/site/help-and-support";
 import { Heading } from "@/components/site/heading";
 
 export default function Page() {
