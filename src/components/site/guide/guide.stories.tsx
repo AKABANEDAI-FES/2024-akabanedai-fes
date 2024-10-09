@@ -7,8 +7,8 @@ export default {
 	tags: ["autodocs"],
 	args: {
 		children: "サンプルテキスト",
-		headingText:"サンプルテキスト",
-		listItem:["テキスト","テキスト"],
+		headingText: "サンプルテキスト",
+		listItem: ["テキスト", "テキスト"],
 	},
 	parameters: {
 		layout: "fullscreen",
