@@ -1,7 +1,6 @@
 import { Section } from "../section";
 import styles from "./guide.module.css";
 
-
 export type Props = {
 	headingText: React.ReactNode;
 	listItem?: string[];
