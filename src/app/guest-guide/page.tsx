@@ -31,13 +31,15 @@ export default function Page() {
 	return (
 		<>
 			<Heading>ご来場の皆様へ</Heading>
-			<div className={styles.request}>
-				<p className={styles.requestItem}>
-					赤羽台祭へご来場の方は、以下の注意事項をお守りくださいますようお願いいたします。
-				</p>
-				<p className={styles.requestItem}>
-					※掲載内容は順次更新いたしますので最新情報を必ずご確認の上、ご参加ください。
-				</p>
+			<div className={styles.content}>
+				<div className={styles.request}>
+					<p className={styles.requestItem}>
+						赤羽台祭へご来場の方は、以下の注意事項をお守りくださいますようお願いいたします。
+					</p>
+					<p className={styles.requestItem}>
+						※掲載内容は順次更新いたしますので最新情報を必ずご確認の上、ご参加ください。
+					</p>
+				</div>
 			</div>
 			<Summary />
 			<div id="addmissionInfo" className={styles.linkScroll}>

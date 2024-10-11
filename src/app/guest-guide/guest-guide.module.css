@@ -1,6 +1,10 @@
-.request {
-	max-width: 1200px;
+.content {
 	margin: 5%;
+}
+
+.request {
+	max-width: 1100px;
+	margin: auto;
 	background-color: var(--color-fill);
 	border: solid var(--color-secondary) 3px;
 	border-radius: 2px;
@@ -8,7 +12,7 @@
 }
 
 .requestItem {
-	margin: 8%;
+	margin: 1%;
 }
 
 .linkScroll {
