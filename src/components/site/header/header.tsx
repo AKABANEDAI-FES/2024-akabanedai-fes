@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useCallback, useState } from "react";
 import { Drawer } from "./drawer";
 import styles from "./header.module.css";
 
@@ -30,6 +31,11 @@ const navigation = [
 
 export function Header() {
 	const pathname = usePathname();
+	const [open, setOpen] = useState(false);
+
+	const handleOpenToggle = useCallback(() => {
+		setOpen((prev) => !prev);
+	}, []);
 
 	const site = "第八回 赤羽台祭";
 	return (
@@ -59,7 +65,7 @@ export function Header() {
 					))}
 				</ul>
 			</nav>
-			<Drawer>
+			<Drawer open={open} onOpenToggle={handleOpenToggle}>
 				<ul className={styles.drawer}>
 					{navigation.map(({ title, href }) => (
 						<li key={title}>
@@ -67,6 +73,7 @@ export function Header() {
 								<Link
 									href={href}
 									aria-current={href === pathname ? "page" : undefined}
+									onClick={handleOpenToggle}
 								>
 									{title}
 								</Link>
