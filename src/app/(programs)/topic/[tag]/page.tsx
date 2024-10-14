@@ -1,8 +1,6 @@
-import { ProgramList } from "@/components/site/program-list";
-import { getAllTags, getProgramsByTag } from "@/utils/program";
+import { getAllTags } from "@/utils/program";
 import type { Metadata } from "next";
-import sharedStyle from "../../shared.module.css";
-import styles from "./page.module.css";
+import { Page as ProgramsPage } from "../../_page";
 
 function encodeTag(tag: string) {
 	const prod = process.env.NODE_ENV === "production";
@@ -36,15 +34,6 @@ export default function Page({
 	params: { tag: string };
 }) {
 	const tag = decodeURIComponent(params.tag);
-	const programs = getProgramsByTag(tag);
 
-	return (
-		<>
-			<h1 className={sharedStyle.title}>企画一覧</h1>
-			<span className={styles.topic}>トピック: {tag}</span>
-			<div className={sharedStyle.container}>
-				<ProgramList programs={programs} />
-			</div>
-		</>
-	);
+	return <ProgramsPage tag={tag} />;
 }
