@@ -3,7 +3,7 @@ import styles from "./help-and-support.module.css";
 
 export function HelpAndSupport() {
 	{
-		const headingText: React.ReactNode = <>困ったことがあったら</>;
+		const headingText: React.ReactNode = "困ったことがあったら";
 
 		return (
 			<Guide headingText={headingText}>

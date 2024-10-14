@@ -1,27 +1,25 @@
 import { AdmissionInfo } from "@/components/site/admissionInfo";
 import { Guidelines } from "@/components/site/guidelines";
-import { Heading } from "@/components/site/heading";
 import { HelpAndSupport } from "@/components/site/help-and-support";
-import Link from "next/link";
 import styles from "./guest-guide.module.css";
 
 function Summary() {
 	return (
 		<ul className={styles.list}>
 			<li className={styles.listItem}>
-				<Link href="#addmissionInfo" className={styles.link}>
+				<a href="#admissionInfo" className={styles.link}>
 					入退場について
-				</Link>
+				</a>
 			</li>
 			<li className={styles.listItem}>
-				<Link href="#guidelines" className={styles.link}>
+				<a href="#guidelines" className={styles.link}>
 					キャンパス内での注意事項
-				</Link>
+				</a>
 			</li>
 			<li className={styles.listItem}>
-				<Link href="#helpAndSupport" className={styles.link}>
+				<a href="#helpAndSupport" className={styles.link}>
 					困ったことがあったら
-				</Link>
+				</a>
 			</li>
 		</ul>
 	);
@@ -30,7 +28,7 @@ function Summary() {
 export default function Page() {
 	return (
 		<>
-			<Heading>ご来場の皆様へ</Heading>
+			<h1 className={styles.title}>ご来場の皆様へ</h1>
 			<div className={styles.content}>
 				<div className={styles.request}>
 					<p className={styles.requestItem}>
@@ -42,7 +40,7 @@ export default function Page() {
 				</div>
 			</div>
 			<Summary />
-			<div id="addmissionInfo" className={styles.linkScroll}>
+			<div id="admissionInfo" className={styles.linkScroll}>
 				<AdmissionInfo />
 			</div>
 			<div id="guidelines" className={styles.linkScroll}>

@@ -1,5 +1,4 @@
 import { Guide } from "../guide";
-import styles from "./guidelines.module.css";
 
 const guidelinesInfo: string[] = [
 	"火気の取り扱いはご遠慮ください.",
@@ -14,9 +13,8 @@ const guidelinesInfo: string[] = [
 export function Guidelines() {
 	const headingText: React.ReactNode = (
 		<>
-			キャンパス内での
-			<br className={styles.br} />
-			注意事項
+			<span>キャンパス内での</span>
+			<span>注意事項</span>
 		</>
 	);
 	return (

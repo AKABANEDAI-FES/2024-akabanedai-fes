@@ -12,7 +12,9 @@
 	border-radius: 5px;
 	padding: 5px;
 }
-
+.heading span{
+	display: inline-block;
+}
 .listItem {
 	list-style: disc;
 	margin: 1.2em;

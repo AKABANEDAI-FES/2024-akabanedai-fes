@@ -1,3 +1,9 @@
+.title {
+	text-align: center;
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	margin: 4%;
+	font-family: var(--font-serif);
+}
 .content {
 	margin: 5%;
 }
@@ -29,7 +35,7 @@
 }
 
 .link {
-	color: rgba(var(--color-blue), 0.7);
+	color: rgba(var(--color-blue), 0.85);
 	font-weight: bold;
 	transition: 0.2s;
 }
