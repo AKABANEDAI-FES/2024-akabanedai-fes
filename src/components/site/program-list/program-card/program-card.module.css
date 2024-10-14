@@ -47,6 +47,10 @@
 	font-size: 1rem;
 }
 
+.program-card .note > span {
+	display: inline-flex;
+}
+
 .program-card .tags {
 	grid-area: tags;
 	place-self: end start;
