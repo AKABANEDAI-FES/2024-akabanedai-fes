@@ -12,7 +12,7 @@ const navigation = [
 	},
 	{
 		title: "企画一覧",
-		href: undefined,
+		href: "/programs",
 	},
 	{
 		title: "タイムテーブル",
