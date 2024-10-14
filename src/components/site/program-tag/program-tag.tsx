@@ -1,20 +1,21 @@
+import type { Program } from "@/types/program";
 import { Link } from "next-view-transitions";
 import styles from "./program-tag.module.css";
 
 export type Props = {
-	children?: React.ReactNode;
+	tag: Program["tags"][number];
 	size?: "sm" | "md";
 	href?: string;
 };
 
-export function ProgramTag({ children, size, href }: Props) {
+export function ProgramTag({ tag, size, href }: Props) {
 	return (
 		<Link
-			href={href ?? `/topic/${children}`}
+			href={href ?? `/topic/${tag}`}
 			data-size={size ?? "md"}
 			className={styles["program-tag"]}
 		>
-			{children}
+			{tag}
 		</Link>
 	);
 }

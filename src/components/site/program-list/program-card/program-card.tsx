@@ -24,9 +24,7 @@ export function ProgramCard({ program }: Props) {
 			</Link>
 			<div className={styles.tags}>
 				{program.tags.map((tag) => (
-					<ProgramTag href={`/topic/${tag}`} key={tag} size="sm">
-						{tag}
-					</ProgramTag>
+					<ProgramTag tag={tag} key={tag} size="sm" />
 				))}
 			</div>
 		</div>

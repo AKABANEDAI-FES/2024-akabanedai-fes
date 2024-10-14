@@ -18,14 +18,14 @@ type Story = StoryObj<typeof ProgramTag>;
 
 export const Small: Story = {
 	args: {
-		children: "Small",
+		tag: "Small",
 		size: "sm",
 	},
 };
 
 export const Medium: Story = {
 	args: {
-		children: "Medium",
+		tag: "Medium",
 		size: "md",
 	},
 };
