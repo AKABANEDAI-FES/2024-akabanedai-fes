@@ -5,6 +5,11 @@ const meta = {
 	title: "Site/ProgramTag",
 	component: ProgramTag,
 	tags: ["autodocs"],
+	parameters: {
+		nextjs: {
+			appDirectory: true,
+		},
+	},
 } satisfies Meta<typeof ProgramTag>;
 
 export default meta;
