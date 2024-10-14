@@ -4,6 +4,7 @@
 	justify-content: center;
 	color: var(--color-secondary);
 	border: 1px solid var(--color-secondary);
+	background-color: var(--color-fill);
 	border-radius: 4px;
 }
 
@@ -15,4 +16,9 @@
 .program-tag[data-size="md"] {
 	font-size: 14px;
 	padding: 4px 10px;
+}
+
+.program-tag[aria-pressed="true"] {
+	background-color: var(--color-secondary);
+	color: var(--color-fill);
 }

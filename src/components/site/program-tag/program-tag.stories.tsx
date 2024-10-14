@@ -29,3 +29,10 @@ export const Medium: Story = {
 		size: "md",
 	},
 };
+
+export const Pressed: Story = {
+	args: {
+		tag: "Pressed",
+		pressed: true,
+	},
+};
