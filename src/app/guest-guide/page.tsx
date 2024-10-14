@@ -1,7 +1,15 @@
 import { AdmissionInfo } from "@/components/site/admissionInfo";
 import { Guidelines } from "@/components/site/guidelines";
 import { HelpAndSupport } from "@/components/site/help-and-support";
+import type { Metadata } from "next";
 import styles from "./guest-guide.module.css";
+
+export const metadata: Metadata = {
+	title: "ご来場の皆様へ",
+	openGraph: {
+		title: "ご来場の皆様へ",
+	},
+};
 
 function Summary() {
 	return (
