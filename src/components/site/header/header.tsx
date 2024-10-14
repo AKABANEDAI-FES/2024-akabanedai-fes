@@ -25,7 +25,7 @@ const navigation = [
 	},
 	{
 		title: "ご来場の皆様へ",
-		href: undefined,
+		href: "/guest-guide",
 	},
 ] as const;
 
