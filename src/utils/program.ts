@@ -16,7 +16,7 @@ export function getProgramByTitle(title: string): Program | null {
 	return getPrograms().find((program) => program.title === title) ?? null;
 }
 
-export function getProgrampsByTag(tag: string): Program[] {
+export function getProgramsByTag(tag: string): Program[] {
 	return getPrograms().filter((program) => program.tags.includes(tag));
 }
 

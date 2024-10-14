@@ -1,5 +1,5 @@
 import { ProgramList } from "@/components/site/program-list";
-import { getAllTags, getProgrampsByTag } from "@/utils/program";
+import { getAllTags, getProgramsByTag } from "@/utils/program";
 import type { Metadata } from "next";
 import sharedStyle from "../../shared.module.css";
 import styles from "./page.module.css";
@@ -36,7 +36,7 @@ export default function Page({
 	params: { tag: string };
 }) {
 	const tag = decodeURIComponent(params.tag);
-	const programs = getProgrampsByTag(tag);
+	const programs = getProgramsByTag(tag);
 
 	return (
 		<>
