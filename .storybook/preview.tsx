@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "@/app/globals.css";
+import { ViewTransitions } from "next-view-transitions";
 
 const preview: Preview = {
 	parameters: {
@@ -10,6 +11,13 @@ const preview: Preview = {
 			},
 		},
 	},
+	decorators: [
+		(Story) => (
+			<ViewTransitions>
+				<Story />
+			</ViewTransitions>
+		),
+	],
 };
 
 export default preview;
