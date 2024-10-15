@@ -1,6 +1,12 @@
+import { ClockIcon } from "@/components/icons/clock";
+import { FamilyIcon } from "@/components/icons/family";
+import { LocationIcon } from "@/components/icons/location";
+import { ProgramTag } from "@/components/site/program-tag";
 import { getProgramByTitle, getPrograms } from "@/utils/program";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
+import styles from "./page.module.css";
 
 function encodeTitle(title: string) {
 	const prod = process.env.NODE_ENV === "production";
@@ -46,11 +52,41 @@ export default function Page({
 	}
 
 	return (
-		<>
-			<h1>{program.title}</h1>
-			<img src={program.logo} alt="" />
-			<p>{program.description}</p>
-			<p>{program.organization}</p>
-		</>
+		<div className={styles.container}>
+			<div className={styles.program}>
+				<h1 className={styles["program-name"]}>{program.title}</h1>
+				<Image
+					src={program.logo}
+					alt={program.title}
+					className={styles["program-image"]}
+					width={512}
+					height={512}
+				/>
+				<div className={styles["program-info"]}>
+					<h2 className={styles.organization}>{program.organization}</h2>
+					<p>
+						<LocationIcon className={styles.icon} />
+						{program.placement}
+					</p>
+					<p>
+						<ClockIcon className={styles.icon} />
+						{program.time}
+					</p>
+					<p>
+						<FamilyIcon className={styles.icon} />
+						{program.age}
+					</p>
+				</div>
+				<div className={styles["program-tag"]}>
+					{program.tags.map((tag) => (
+						<ProgramTag tag={tag} key={tag} />
+					))}
+				</div>
+				<div className={styles["program-description"]}>
+					<h2>企画説明</h2>
+					<p>{program.description}</p>
+				</div>
+			</div>
+		</div>
 	);
 }
