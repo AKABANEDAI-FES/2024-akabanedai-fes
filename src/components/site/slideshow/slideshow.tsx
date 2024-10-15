@@ -8,10 +8,11 @@ export function Slideshow() {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const images = [
-		{ src: "/slideshow1.png", alt: "Slide 1" },
-		{ src: "/slideshow2.png", alt: "Slide 2" },
-		{ src: "/slideshow3.png", alt: "Slide 3" },
-		{ src: "/slideshow4.png", alt: "Slide 4" },
+		{ src: "/slideshow1.png", alt: "" },
+		{ src: "/slideshow2.png", alt: "" },
+		{ src: "/slideshow3.png", alt: "" },
+		{ src: "/slideshow4.png", alt: "" },
+		{ src: "/slideshow5.png", alt: "" },
 	];
 
 	const totalSlides = images.length;
