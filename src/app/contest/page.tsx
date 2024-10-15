@@ -4,9 +4,12 @@ export default function Contest() {
 	return (
 		<div className="contest-container">
 			<nav className="breadcrumb">
-				<a href="/">企画一覧</a> &gt; 企画コンテスト
+				<a href="/" style={{ color: "black" }}>
+					企画一覧
+				</a>{" "}
+				&gt; 企画コンテスト
 			</nav>
-			<h1>企画コンテスト</h1>
+			<h1 style={{ color: "black" }}>企画コンテスト</h1>
 			<h2>企画コンテストとは</h2>
 			<p>
 				大学生主体の企画を対象にして、ご来場いただいた皆様の投票によって魅力度の高い企画を決定する大学祭実行委員会公式企画になります。

@@ -39,9 +39,15 @@
 		}
 	}
 
+	@font-face {
+		font-family: "Inter-VariableFont_opsz-wght";
+		src: url(./fonts/Inter-VariableFont_opsz-wght.ttf);
+	}
+
 	html {
 		background-color: var(--color-base);
 		font-family: var(--font-sans);
 		min-height: 100dvb;
+		font-family: "Inter-VariableFont_opsz-wght", sans-serif;
 	}
 }
