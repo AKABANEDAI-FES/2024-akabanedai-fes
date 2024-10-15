@@ -1,4 +1,6 @@
 import type { Program } from "@/types/program";
+import { buildPath } from "@/utils/url";
+import Image from "next/image";
 import Link from "next/link";
 import { ProgramTag } from "../../program-tag";
 import styles from "./program-card.module.css";
@@ -12,7 +14,13 @@ export function ProgramCard({ program }: Props) {
 	return (
 		<div className={styles["program-card"]}>
 			<Link href={`/programs/${title}`} className={styles.link}>
-				<img src={program.logo} alt={program.title} className={styles.logo} />
+				<Image
+					width={512}
+					height={512}
+					src={buildPath(program.logo)}
+					alt={program.title}
+					className={styles.logo}
+				/>
 				<h2 className={styles.title}>{program.title}</h2>
 				<p className={styles.note}>
 					<span>{program.organization}</span> / <span>{program.placement}</span>
