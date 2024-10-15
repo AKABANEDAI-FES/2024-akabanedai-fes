@@ -12,8 +12,8 @@
 .breadcrumb {
 	color: #555;
 	margin-bottom: 20px;
-	font-family: Mincho;
-	border-bottom: solid 0.1spx black;
+	font-family: Mincho, serif;
+	border-bottom: solid 0.1px black;
 }
 
 .breadcrumb a {
