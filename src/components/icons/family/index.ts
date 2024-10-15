@@ -1,0 +1,1 @@
+export { FamilyIcon } from "./family";
