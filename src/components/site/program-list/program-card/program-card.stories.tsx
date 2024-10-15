@@ -22,6 +22,8 @@ export const Default: Story = {
 			organization: "Organization",
 			placement: "Placement",
 			tags: ["Tag 1", "Tag 2"],
+			time: "Time",
+			age: "Age",
 		},
 	},
 };

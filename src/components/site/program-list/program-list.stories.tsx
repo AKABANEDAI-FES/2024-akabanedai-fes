@@ -19,6 +19,8 @@ const data = Array.from({ length: 20 }, (_, i) => ({
 	placement: "Placement",
 	tags: Array.from({ length: i }, (_, j) => `Tag ${j + 1}`),
 	description: "Description",
+	time: "Time",
+	age: "Age",
 })) satisfies Program[];
 
 export const Default: Story = {

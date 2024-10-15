@@ -5,4 +5,6 @@ export type Program = {
 	organization: string;
 	placement: string;
 	tags: string[];
+	time: string;
+	age: string;
 };

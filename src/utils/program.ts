@@ -9,6 +9,8 @@ export function getPrograms(): Program[] {
 		organization: program.団体名,
 		placement: program.場所 ?? "",
 		tags: program.タグ,
+		time: program.所要時間,
+		age: program.対象年齢,
 	}));
 }
 
