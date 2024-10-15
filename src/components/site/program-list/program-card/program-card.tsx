@@ -8,14 +8,10 @@ export type Props = {
 };
 
 export function ProgramCard({ program }: Props) {
+	const title = encodeURIComponent(program.title);
 	return (
-		<div
-			className={styles["program-card"]}
-			style={{
-				viewTransitionName: `program-card-${program.title}`,
-			}}
-		>
-			<Link href={`/programs/${program.title}`} className={styles.link}>
+		<div className={styles["program-card"]}>
+			<Link href={`/programs/${title}`} className={styles.link}>
 				<img src={program.logo} alt={program.title} className={styles.logo} />
 				<h2 className={styles.title}>{program.title}</h2>
 				<p className={styles.note}>

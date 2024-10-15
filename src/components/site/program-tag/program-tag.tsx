@@ -1,5 +1,5 @@
 import type { Program } from "@/types/program";
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 import styles from "./program-tag.module.css";
 
 export type Props = {

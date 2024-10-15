@@ -5,7 +5,6 @@ import path from "node:path";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { ViewTransitions } from "next-view-transitions";
 import nextConfig from "../../next.config.mjs";
 
 export const metadata: Metadata = {
@@ -37,13 +36,11 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			{process.env.GA_ID && <GoogleAnalytics gaId={process.env.GA_ID} />}
-			<ViewTransitions>
-				<body>
-					<Header />
-					{children}
-					<Footer />
-				</body>
-			</ViewTransitions>
+			<body>
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
