@@ -4,7 +4,7 @@
 	gap: 16px;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 420px) {
 	.program-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
