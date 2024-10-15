@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// biome-ignore lint/correctness/noNodejsModules: build time
-import path from "node:path";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
+import { buildPath } from "@/utils/url";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import nextConfig from "../../next.config.mjs";
 
 export const metadata: Metadata = {
 	metadataBase: process.env.METADATA_BASE
 		? new URL(process.env.METADATA_BASE)
 		: undefined,
-	manifest: path.join(nextConfig.basePath || "", "/manifest.webmanifest"),
+	manifest: buildPath("/manifest.webmanifest"),
 	title: {
 		template: "%s | 赤羽台祭",
 		default: "赤羽台祭",

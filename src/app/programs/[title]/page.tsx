@@ -3,6 +3,7 @@ import { FamilyIcon } from "@/components/icons/family";
 import { LocationIcon } from "@/components/icons/location";
 import { ProgramTag } from "@/components/site/program-tag";
 import { getProgramByTitle, getPrograms } from "@/utils/program";
+import { buildPath } from "@/utils/url";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -56,7 +57,7 @@ export default function Page({
 			<div className={styles.program}>
 				<h1 className={styles["program-name"]}>{program.title}</h1>
 				<Image
-					src={program.logo}
+					src={buildPath(program.logo)}
 					alt={program.title}
 					className={styles["program-image"]}
 					width={512}
