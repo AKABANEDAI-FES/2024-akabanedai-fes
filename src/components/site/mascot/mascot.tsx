@@ -1,5 +1,5 @@
-import styles from "./mascot.module.css";
 import Image from "next/image";
+import styles from "./mascot.module.css";
 
 export function Mascot() {
 	return (
