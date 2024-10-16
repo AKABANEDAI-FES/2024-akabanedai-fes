@@ -1,24 +1,19 @@
 import { Dialog } from "@ark-ui/react";
-import { useCallback, useState } from "react";
 import styles from "./drawer.module.css";
 
 export type Props = {
 	children?: React.ReactNode;
+	open?: boolean;
+	onOpenToggle?: () => void;
 };
 
-export function Drawer({ children }: Props) {
-	const [open, setOpen] = useState(false);
-
-	const handleOpenToggle = useCallback(() => {
-		setOpen((prev) => !prev);
-	}, []);
-
+export function Drawer({ children, open, onOpenToggle }: Props) {
 	return (
 		<Dialog.Root open={open}>
 			<button
 				type="button"
 				className={styles.trigger}
-				onClick={handleOpenToggle}
+				onClick={onOpenToggle}
 				data-state={open ? "open" : "closed"}
 				aria-label={open ? "閉じる" : "メニューを開く"}
 			>

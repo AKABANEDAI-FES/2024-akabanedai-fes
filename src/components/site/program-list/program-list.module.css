@@ -1,0 +1,12 @@
+.program-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+@media screen and (min-width: 420px) {
+	.program-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+	}
+}

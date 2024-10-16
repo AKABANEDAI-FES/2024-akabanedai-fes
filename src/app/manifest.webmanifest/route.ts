@@ -1,5 +1,4 @@
-import path from "node:path";
-import nextConfig from "../../../next.config.mjs";
+import { buildPath } from "@/utils/url";
 
 export function GET() {
 	return new Response(
@@ -35,7 +34,7 @@ export function GET() {
 			],
 			theme_color: "#961717",
 			background_color: "#fef8ec",
-			start_url: path.join(nextConfig.basePath || "", "/"),
+			start_url: buildPath("/"),
 			display: "standalone",
 		}),
 		{

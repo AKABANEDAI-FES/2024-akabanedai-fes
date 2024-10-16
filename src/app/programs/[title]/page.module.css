@@ -1,0 +1,90 @@
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding-inline: 16px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.program {
+	display: grid;
+	grid-template-areas:
+		"program-name"
+		"program-image"
+		"program-info"
+		"program-tag"
+		"program-description";
+	grid-template-columns: 1fr;
+	column-gap: 32px;
+	row-gap: 24px;
+}
+
+.program-name {
+	grid-area: program-name;
+	font-size: 32px;
+	font-family: var(--font-serif);
+}
+
+.program-image {
+	grid-area: program-image;
+}
+
+.program-info {
+	grid-area: program-info;
+}
+
+.program-info p {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.program-info p + p {
+	margin-top: 8px;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+.program-info .organization {
+	font-size: 28px;
+	margin-bottom: 16px;
+}
+
+.program-tag {
+	grid-area: program-tag;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.program-description {
+	grid-area: program-description;
+}
+
+.program-description h2 {
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 568px) {
+	.container {
+		margin-top: 64px;
+		margin-bottom: 64px;
+		padding-inline: 32px;
+	}
+
+	.program {
+		grid-template-areas:
+			"program-name program-name"
+			"program-image program-info"
+			"program-tag program-tag"
+			"program-description program-description";
+		grid-template-columns: 1fr 1fr;
+		row-gap: 32px;
+	}
+}

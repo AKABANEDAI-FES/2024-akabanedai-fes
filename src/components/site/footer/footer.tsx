@@ -10,7 +10,7 @@ const navigation = [
 	},
 	{
 		title: "企画一覧",
-		href: undefined,
+		href: "/programs",
 	},
 	{
 		title: "タイムテーブル",
@@ -26,7 +26,7 @@ const navigation = [
 	},
 	{
 		title: "ご来場の皆様へ",
-		href: undefined,
+		href: "/guest-guide",
 	},
 ];
 

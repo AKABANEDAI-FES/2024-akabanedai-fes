@@ -1,0 +1,31 @@
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding-inline: 16px;
+}
+
+.container > * {
+	margin-top: 64px;
+}
+
+.topics {
+	color: var(--color-primary);
+	border: 2px solid var(--color-primary);
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 16px;
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.title {
+	text-align: center;
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	font-family: var(--font-serif);
+}
+
+.programs {
+	margin-bottom: 128px;
+}
