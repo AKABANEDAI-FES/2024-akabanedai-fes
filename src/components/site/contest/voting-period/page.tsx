@@ -11,8 +11,7 @@ export function VotingPeriod() {
 				<br />
 				<span class="p-date2">11月2日 12:00~18:00</span>
 				<span class="p-date2">11月3日 12:00~15:00</span>
-				<br />
-				※ スケジュールは都合により一部変更になる可能性があります。
+				<br />※ スケジュールは都合により一部変更になる可能性があります。
 			</p>
 		</div>
 	);

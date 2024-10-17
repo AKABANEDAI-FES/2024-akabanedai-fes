@@ -1,13 +1,12 @@
 import "./contest.css";
+import Link from "next/link";
 import { AboutContest } from "../../components/site/contest/about-contest/page";
 import { Award } from "../../components/site/contest/award/page";
 import { HowToVote } from "../../components/site/contest/how-to-vote/page";
 import { Result } from "../../components/site/contest/result/page";
 import { VotingPeriod } from "../../components/site/contest/voting-period/page";
-import  Link  from "next/link";
 
 export default function Home() {
-
 	return (
 		<div>
 			<nav className="breadcrumb">
@@ -26,11 +25,11 @@ export default function Home() {
 				<Result />
 				<Award />
 			</>
-				<button type="button" className="back-button">
-        <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
-          企画一覧に戻る
-        </Link>
-      </button>
+			<button type="button" className="back-button">
+				<Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+					企画一覧に戻る
+				</Link>
+			</button>
 		</div>
 	);
 }
