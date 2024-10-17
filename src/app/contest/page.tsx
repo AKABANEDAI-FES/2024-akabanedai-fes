@@ -19,10 +19,10 @@ export default function Contest() {
 			<h1 style={{ color: "black" }}>企画コンテスト</h1>
 			<>
 				<AboutContest />
-				<Award />
+				<VotingPeriod />
 				<HowToVote />
 				<Result />
-				<VotingPeriod />
+				<Award />
 			</>
 			<button type="button" className="back-button">
 				企画一覧に戻る
