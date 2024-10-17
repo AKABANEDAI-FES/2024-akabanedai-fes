@@ -1,0 +1,43 @@
+.slideshow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10% 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.slidesContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.slide {
+	position: relative;
+	min-width: 400px;
+	height: 300px;
+	transition: transform 0.5s ease-in-out;
+	margin: 0 10px;
+}
+
+.currentSlide {
+	transform: scale(1);
+}
+
+.sideSlide {
+	transform: scale(1);
+}
+
+.image {
+	object-fit: "cover";
+}

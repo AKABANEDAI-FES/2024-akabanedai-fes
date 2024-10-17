@@ -1,0 +1,28 @@
+.encount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10% 0;
+}
+
+.image {
+	max-width: 70%;
+	height: auto;
+}
+
+.textWrapper {
+	width: 70%;
+	max-width: 800px;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.description {
+	font-size: 16px;
+}
