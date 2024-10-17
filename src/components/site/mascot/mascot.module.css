@@ -7,7 +7,7 @@
 
 .title {
 	text-align: center;
-	font-size: 36px;
+	font-size: 34px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -17,11 +17,11 @@
 }
 
 .name {
-	width: 800px;
+	max-width: 1000px;
 	margin-top: 50px;
-	margin-right: 100px;
+	margin-right: auto;
 	margin-bottom: 20px;
-	margin-left: 100px;
+	margin-left: auto;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: left;
