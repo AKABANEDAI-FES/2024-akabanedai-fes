@@ -1,7 +1,38 @@
-h2 {
+.div-pageall {
+	margin: 100px;
+}
+
+.h2-heading {
 	color: #000000;
 	font-size: 48px;
 	margin: 10px;
-	border-left: 15px solid #f27166;
 	padding-left: 10px;
+	border-left: 15px solid #f27166;
+}
+
+p {
+	font-size: 30px;
+	color: #444444;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
+.p-date {
+	margin: 50px;
+}
+.p-date2 {
+	display: block;
+	margin-left: 50px;
+}
+.p-award {
+	display: block;
+	font-size: 30px;
+	color: #444444;
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }

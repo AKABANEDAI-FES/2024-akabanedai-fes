@@ -4,10 +4,12 @@ import { Award } from "../../components/site/contest/award/page";
 import { HowToVote } from "../../components/site/contest/how-to-vote/page";
 import { Result } from "../../components/site/contest/result/page";
 import { VotingPeriod } from "../../components/site/contest/voting-period/page";
+import  Link  from "next/link";
 
-export default function Contest() {
+export default function Home() {
+
 	return (
-		<div className="contest-container">
+		<div>
 			<nav className="breadcrumb">
 				<h2>
 					<a href="/" style={{ color: "black" }}>
@@ -24,9 +26,11 @@ export default function Contest() {
 				<Result />
 				<Award />
 			</>
-			<button type="button" className="back-button">
-				企画一覧に戻る
-			</button>
+				<button type="button" className="back-button">
+        <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+          企画一覧に戻る
+        </Link>
+      </button>
 		</div>
 	);
 }
