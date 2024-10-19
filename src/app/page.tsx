@@ -1,7 +1,7 @@
 import { Access } from "@/components/site/access";
 import { Challenge } from "@/components/site/challenge";
 import { Hero } from "@/components/site/hero";
-import { Sponsor } from "@/components/site/sponsor";
+import { Sponsors } from "@/components/site/sponsor";
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 			<Hero />
 			<Challenge />
 			<Access />
-			<Sponsor />
+			<Sponsors />
 		</>
 	);
 }
