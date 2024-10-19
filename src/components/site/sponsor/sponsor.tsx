@@ -1,35 +1,11 @@
-import { getSponsors } from "@/utils/sponsor";
-import { buildPath } from "@/utils/url";
-import Image from "next/image";
-import { Heading } from "../heading";
 import { Section } from "../section";
 import styles from "./sponsor.module.css";
 
 export function Sponsor() {
-	const sponsors = getSponsors();
-
+	// TODO
 	return (
 		<Section className={styles.container}>
-			<Heading>協賛企業さま</Heading>
-			<div className={styles.sponsor}>
-				{sponsors.map((sponsor) => (
-					<a
-						key={sponsor.name}
-						href={sponsor.url}
-						className={styles.link}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Image
-							className={styles.image}
-							src={buildPath(sponsor.logo)}
-							alt={sponsor.name}
-							width={300}
-							height={200}
-						/>
-					</a>
-				))}
-			</div>
+			<div className={styles.sponsor} />
 		</Section>
 	);
 }
