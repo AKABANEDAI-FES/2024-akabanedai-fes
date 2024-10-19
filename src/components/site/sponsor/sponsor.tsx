@@ -13,7 +13,13 @@ export function Sponsor() {
 			<Heading>協賛企業さま</Heading>
 			<div className={styles.sponsor}>
 				{sponsors.map((sponsor) => (
-					<a key={sponsor.name} href={sponsor.url} className={styles.link}>
+					<a
+						key={sponsor.name}
+						href={sponsor.url}
+						className={styles.link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<Image
 							className={styles.image}
 							src={buildPath(sponsor.logo)}
