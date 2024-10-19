@@ -5,6 +5,6 @@ export function getSponsors(): Sponsor[] {
 	return sponsor.map((sponsor) => ({
 		name: sponsor.企業名,
 		url: sponsor.url,
-		logo: `/sponsor/${sponsor.ロゴ}`,
+		logo: sponsor.ロゴ ? `/sponsor/${sponsor.ロゴ}` : null,
 	}));
 }

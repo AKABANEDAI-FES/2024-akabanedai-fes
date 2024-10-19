@@ -1,1 +1,1 @@
-export { Sponsor } from "./sponsor";
+export { Sponsors } from "./sponsor";
