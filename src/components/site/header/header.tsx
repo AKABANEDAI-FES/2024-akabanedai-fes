@@ -8,7 +8,7 @@ import styles from "./header.module.css";
 const navigation = [
 	{
 		title: "赤羽台祭とは",
-		href: undefined,
+		href: "/about",
 	},
 	{
 		title: "企画一覧",
