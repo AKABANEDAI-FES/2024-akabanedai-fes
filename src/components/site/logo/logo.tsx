@@ -1,3 +1,4 @@
+import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { Section } from "../section";
 import styles from "./logo.module.css";
@@ -6,10 +7,10 @@ export function Logo() {
 	return (
 		<Section className={styles.logo}>
 			<Image
-				src="/pwa-512x512.png"
-				alt=""
-				width={400}
-				height={400}
+				src={logo}
+				alt="赤羽台祭のロゴ"
+				width={logo.width}
+				height={logo.height}
 				className={styles.image}
 			/>
 			<h2 className={styles.title}>
