@@ -29,7 +29,7 @@
 
 .image {
 	height: var(--slide-height);
-	object-fit: cover;
+	object-fit: contain;
 }
 
 @media screen and (min-width: 640px) {
