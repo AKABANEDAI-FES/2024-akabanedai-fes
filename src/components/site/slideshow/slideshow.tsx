@@ -1,66 +1,19 @@
-"use client";
-
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import slideshow1 from "@/assets/slideshow1.png";
+import slideshow2 from "@/assets/slideshow2.png";
+import slideshow3 from "@/assets/slideshow3.png";
+import slideshow4 from "@/assets/slideshow4.png";
+import slideshow5 from "@/assets/slideshow5.png";
+import { Carousel } from "./carousel";
 import styles from "./slideshow.module.css";
 
 export function Slideshow() {
-	const [currentSlide, setCurrentSlide] = useState(0);
-
-	const images = [
-		{ src: "/slideshow1.png", alt: "" },
-		{ src: "/slideshow2.png", alt: "" },
-		{ src: "/slideshow3.png", alt: "" },
-		{ src: "/slideshow4.png", alt: "" },
-		{ src: "/slideshow5.png", alt: "" },
-	];
-
-	const totalSlides = images.length;
-
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-		}, 3000);
-		return () => clearInterval(intervalId);
-	}, [totalSlides]);
-
-	const getPreviousSlideIndex = () =>
-		(currentSlide - 1 + totalSlides) % totalSlides;
-	const getNextSlideIndex = () => (currentSlide + 1) % totalSlides;
+	const images = [slideshow1, slideshow2, slideshow3, slideshow4, slideshow5];
 
 	return (
 		<div className={styles.slideshow}>
 			<h1 className={styles.title}>昨年度の様子</h1>
 			<div className={styles.slidesContainer}>
-				<div className={`${styles.slide} ${styles.sideSlide}`}>
-					<Image
-						src={images[getPreviousSlideIndex()].src}
-						alt={images[getPreviousSlideIndex()].alt}
-						width={400}
-						height={300}
-						className={styles.image}
-					/>
-				</div>
-
-				<div className={`${styles.slide} ${styles.currentSlide}`}>
-					<Image
-						src={images[currentSlide].src}
-						alt={images[currentSlide].alt}
-						width={400}
-						height={300}
-						className={styles.image}
-					/>
-				</div>
-
-				<div className={`${styles.slide} ${styles.sideSlide}`}>
-					<Image
-						src={images[getNextSlideIndex()].src}
-						alt={images[getNextSlideIndex()].alt}
-						width={400}
-						height={300}
-						className={styles.image}
-					/>
-				</div>
+				<Carousel images={images} />
 			</div>
 		</div>
 	);

@@ -18,26 +18,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
 	overflow: hidden;
-}
-
-.slide {
-	position: relative;
-	min-width: 400px;
-	height: 300px;
-	transition: transform 0.5s ease-in-out;
-	margin: 0 10px;
-}
-
-.currentSlide {
-	transform: scale(1);
-}
-
-.sideSlide {
-	transform: scale(1);
-}
-
-.image {
-	object-fit: "cover";
+	max-width: 1200px;
+	margin-inline: auto;
 }
