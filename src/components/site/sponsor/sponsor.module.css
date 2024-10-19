@@ -8,11 +8,17 @@
 }
 
 .sponsor {
+	max-width: 1200px;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.with-logo {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 16px;
-	max-width: 1200px;
-	margin-inline: auto;
 }
 
 .link {
@@ -25,4 +31,18 @@
 	object-fit: contain;
 	height: 100%;
 	width: 100%;
+}
+
+.without-logo {
+	background-color: #fff;
+	padding: 16px;
+}
+
+.without-logo > * {
+	display: inline-flex;
+}
+
+.without-logo > *:has(+ *)::after {
+	content: "/";
+	margin-inline: 8px;
 }
