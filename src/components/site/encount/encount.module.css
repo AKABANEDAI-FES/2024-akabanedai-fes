@@ -2,16 +2,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 10% 0;
+	margin-top: clamp(4rem, -0.571rem + 11.43vw, 8rem);
+	margin-inline: 16px;
 }
 
 .image {
-	max-width: 70%;
+	width: 100%;
+	max-width: 800px;
 	height: auto;
 }
 
 .textWrapper {
-	width: 70%;
 	max-width: 800px;
 	text-align: left;
 	margin-top: 20px;

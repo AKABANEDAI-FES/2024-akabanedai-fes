@@ -1,3 +1,4 @@
+import encount from "@/assets/encount.png";
 import Image from "next/image";
 import styles from "./encount.module.css";
 
@@ -5,10 +6,12 @@ export function Encount() {
 	return (
 		<div className={styles.encount}>
 			<Image
-				src="/encount.png"
+				src={encount}
 				alt=""
-				width={800}
-				height={600}
+				width={encount.width}
+				height={encount.height}
+				loading="eager"
+				priority={true}
 				className={styles.image}
 			/>
 			<div className={styles.textWrapper}>
