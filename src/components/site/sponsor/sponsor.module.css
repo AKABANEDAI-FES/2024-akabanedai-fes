@@ -4,8 +4,25 @@
 		rgba(var(--color-red), 0),
 		rgba(var(--color-red), 1)
 	);
+	padding-inline: clamp(1rem, -0.143rem + 2.86vw, 2rem);
 }
 
 .sponsor {
-	height: 300px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+.link {
+	background-color: #fff;
+	height: 100px;
+	padding: 16px;
+}
+
+.image {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
 }
