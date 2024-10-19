@@ -1,0 +1,64 @@
+.mascot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-inline: 16px;
+}
+
+.title {
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.title span {
+	display: inline-block;
+}
+
+.image {
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 400px;
+	margin-inline: 16px;
+}
+
+.name {
+	max-width: 1000px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.parent {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.explain {
+	border: solid var(--color-secondary);
+	display: grid;
+	grid-template-columns: 100px 1fr;
+}
+
+.left {
+	display: grid;
+	place-content: center;
+	background-color: var(--color-secondary);
+	color: var(--color-fill);
+}
+
+.right {
+	display: flex;
+	align-items: center;
+	padding-inline: 8px;
+	padding-block: 4px;
+	background-color: #fff;
+}

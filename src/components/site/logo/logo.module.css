@@ -1,0 +1,23 @@
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-inline: 16px;
+}
+.title {
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	font-weight: bold;
+	text-align: center;
+}
+.title span {
+	display: inline-block;
+}
+.image {
+	width: 100%;
+	max-width: 512px;
+	height: auto;
+}
+.content {
+	max-width: 800px;
+	text-align: left;
+}

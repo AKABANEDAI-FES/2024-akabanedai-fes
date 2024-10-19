@@ -1,0 +1,38 @@
+.greeting {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-inline: 16px;
+}
+
+.title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.textWrapper {
+	max-width: 800px;
+	text-align: left;
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.position {
+	font-size: 20px;
+}
+
+.name {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.description {
+	margin-bottom: 20px;
+}
