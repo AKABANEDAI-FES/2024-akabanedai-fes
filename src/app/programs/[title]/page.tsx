@@ -65,10 +65,12 @@ export default function Page({
 				/>
 				<div className={styles["program-info"]}>
 					<h2 className={styles.organization}>{program.organization}</h2>
-					<p>
-						<LocationIcon className={styles.icon} />
-						{program.placement}
-					</p>
+					{program.placement && (
+						<p>
+							<LocationIcon className={styles.icon} />
+							{program.placement}
+						</p>
+					)}
 					<p>
 						<ClockIcon className={styles.icon} />
 						{program.time}

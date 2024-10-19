@@ -23,7 +23,13 @@ export function ProgramCard({ program }: Props) {
 				/>
 				<h2 className={styles.title}>{program.title}</h2>
 				<p className={styles.note}>
-					<span>{program.organization}</span> / <span>{program.placement}</span>
+					<span>{program.organization}</span>
+					{program.placement && (
+						<>
+							{" "}
+							/ <span>{program.placement}</span>
+						</>
+					)}
 				</p>
 			</Link>
 			<div className={styles.tags}>
