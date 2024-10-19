@@ -71,6 +71,10 @@
 	margin-bottom: 16px;
 }
 
+.program-description p {
+	white-space: pre-line;
+}
+
 @media screen and (min-width: 568px) {
 	.container {
 		margin-top: 64px;
