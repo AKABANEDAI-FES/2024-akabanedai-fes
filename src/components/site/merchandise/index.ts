@@ -1,0 +1,1 @@
+export { Merchandise } from "./merchandise";

@@ -1,0 +1,44 @@
+.merchContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.merch {
+	margin: 10px;
+	max-width: 450px;
+	text-align: center;
+	font-family: var(--font-serif);
+}
+
+.title {
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+}
+
+.description {
+	font-size: 14pt;
+}
+
+.price {
+	font-size: 18pt;
+}
+
+.smallText {
+	font-size: 11pt;
+}
+
+.space {
+	margin: 5px;
+}
+
+.merchPhoto {
+	max-width: 300px;
+}
+
+.descriptionContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+}
