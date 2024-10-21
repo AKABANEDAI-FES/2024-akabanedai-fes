@@ -1,3 +1,5 @@
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
 import styles from "./merchandise.module.css";
 
 type Props = {
@@ -5,7 +7,7 @@ type Props = {
 	description: string;
 	smallText: string;
 	price: string;
-	imgLink: string;
+	image: StaticImageData;
 };
 
 export function Merchandise(props: Props) {
@@ -20,7 +22,13 @@ export function Merchandise(props: Props) {
 					<h3 className={styles.price}>{props.price}</h3>
 					<p className={styles.smallText}>円</p>
 				</div>
-				<img src={props.imgLink} alt="" className={styles.merchPhoto} />
+				<Image
+					src={props.image.src}
+					width={props.image.width}
+					height={props.image.height}
+					alt={props.title}
+					className={styles.merchPhoto}
+				/>
 			</div>
 		</div>
 	);

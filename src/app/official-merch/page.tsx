@@ -1,3 +1,8 @@
+import akukey from "@/assets/akukey.png";
+import ballpointPen from "@/assets/ballpoint_pen.jpg";
+import clearFile from "@/assets/clear_file.png";
+import handTowel from "@/assets/hand_towel.png";
+import postcard from "@/assets/postcard.png";
 import { Merchandise } from "@/components/site/merchandise";
 import styles from "../guest-guide/guest-guide.module.css";
 
@@ -18,35 +23,35 @@ export default function OfficialMerch() {
 				description=""
 				smallText=""
 				price="200"
-				imgLink="./merchandise_preview/clear_file.png"
+				image={clearFile}
 			/>
 			<Merchandise
 				title="ボールペン"
 				description=""
 				smallText=""
 				price="200"
-				imgLink="./merchandise_preview/ballpoint_pen.jpg"
+				image={ballpointPen}
 			/>
 			<Merchandise
 				title="キーホルダー"
 				description=""
 				smallText=""
 				price="300"
-				imgLink="./merchandise_preview/akukey.png"
+				image={akukey}
 			/>
 			<Merchandise
 				title="イニャーハンドタオル"
 				description=""
 				smallText=""
 				price="400"
-				imgLink="./merchandise_preview/hand_towel.png"
+				image={handTowel}
 			/>
 			<Merchandise
 				title="ポストカード"
 				description=""
 				smallText=""
 				price="100"
-				imgLink="./merchandise_preview/postcard.png"
+				image={postcard}
 			/>
 		</>
 	);
