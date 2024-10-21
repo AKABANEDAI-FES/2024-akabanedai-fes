@@ -18,14 +18,14 @@ export default function OfficialMerch() {
 				description=""
 				smallText=""
 				price="200"
-				imgLink="./merchandise_preview/clear_file.jpg"
+				imgLink="./merchandise_preview/clear_file.png"
 			/>
 			<Merchandise
 				title="ボールペン"
 				description=""
 				smallText=""
 				price="200"
-				imgLink="./merchandise_preview/ballpoint_pen.png"
+				imgLink="./merchandise_preview/ballpoint_pen.jpg"
 			/>
 			<Merchandise
 				title="キーホルダー"
