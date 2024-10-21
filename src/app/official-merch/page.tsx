@@ -17,7 +17,6 @@ export default function OfficialMerch() {
 					</p>
 				</div>
 			</div>
-			<h1>この辺に地図</h1>
 			<Merchandise
 				title="クリアファイル"
 				description=""
