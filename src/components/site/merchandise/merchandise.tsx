@@ -1,5 +1,3 @@
-import noImage from "@/assets/merchandise/NoImage_akabanedai2024.webp";
-
 import styles from "./merchandise.module.css";
 
 type Props = {
@@ -22,7 +20,7 @@ export function Merchandise(props: Props) {
 					<h3 className={styles.price}>{props.price}</h3>
 					<p className={styles.smallText}>円</p>
 				</div>
-				<img src={props.imgLink} alt="" className={styles.merchPhoto} />
+				<img src={props.imgLink} alt="" className={styles.merchPhoto}/>
 			</div>
 		</div>
 	)

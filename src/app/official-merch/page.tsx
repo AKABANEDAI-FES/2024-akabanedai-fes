@@ -12,8 +12,21 @@ export default function OfficialMerch() {
 					</p>
 				</div>
 			</div>
-			<Merchandise />
-			;
+			<h1>この辺に地図</h1>
+			<Merchandise
+				title="クリアファイル"
+				description="A4"
+				smallText="(210mm ✕ 297mm)"
+				price="500"
+				imgLink="./merchandise/S__54583328_0.jpg"
+			/>
+			<Merchandise
+				title="アクリルキーホルダー"
+				description="40mm ✕ 40mm"
+				smallText=""
+				price="400"
+				imgLink="./merchandise/akukey.png"
+			/>
 		</>
 	);
 }
