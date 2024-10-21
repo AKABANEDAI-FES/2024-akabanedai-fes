@@ -21,7 +21,7 @@ const navigation = [
 	},
 	{
 		title: "公式グッズ販売",
-		href: undefined,
+		href: "/official-merch",
 	},
 	{
 		title: "ご来場の皆様へ",
