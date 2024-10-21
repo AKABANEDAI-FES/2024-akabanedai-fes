@@ -15,17 +15,38 @@ export default function OfficialMerch() {
 			<h1>この辺に地図</h1>
 			<Merchandise
 				title="クリアファイル"
-				description="A4"
-				smallText="(210mm ✕ 297mm)"
-				price="500"
-				imgLink="./merchandise/S__54583328_0.jpg"
+				description=""
+				smallText=""
+				price="200"
+				imgLink="./merchandise_preview/clear_file.jpg"
 			/>
 			<Merchandise
-				title="アクリルキーホルダー"
-				description="40mm ✕ 40mm"
+				title="ボールペン"
+				description=""
+				smallText=""
+				price="200"
+				imgLink="./merchandise_preview/ballpoint_pen.png"
+			/>
+			<Merchandise
+				title="キーホルダー"
+				description=""
+				smallText=""
+				price="300"
+				imgLink="./merchandise_preview/akukey.png"
+			/>
+			<Merchandise
+				title="イニャーハンドタオル"
+				description=""
 				smallText=""
 				price="400"
-				imgLink="./merchandise/akukey.png"
+				imgLink="./merchandise_preview/hand_towel.png"
+			/>
+			<Merchandise
+				title="ポストカード"
+				description=""
+				smallText=""
+				price="100"
+				imgLink="./merchandise_preview/postcard.png"
 			/>
 		</>
 	);
