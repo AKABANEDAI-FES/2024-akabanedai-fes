@@ -1,15 +1,15 @@
-import styles from "./contest.module.css";
 import Link from "next/link";
 import { AboutContest } from "../../components/site/contest/about-contest/page";
 import { Award } from "../../components/site/contest/award/page";
 import { HowToVote } from "../../components/site/contest/how-to-vote/page";
 import { Result } from "../../components/site/contest/result/page";
 import { VotingPeriod } from "../../components/site/contest/voting-period/page";
+import styles from "./contest.module.css";
 
 export default function Home() {
 	return (
-		<div>
-			<nav className="breadcrumb">
+		<div className={styles.pageall}>
+			<nav className={styles.breadcrumb}>
 				<h2>
 					<a href="/" style={{ color: "black" }}>
 						企画一覧
@@ -17,7 +17,9 @@ export default function Home() {
 					&gt; 企画コンテスト
 				</h2>
 			</nav>
-			<h1 style={{ color: "black" }}>企画コンテスト</h1>
+			<h1 className={styles.h1} style={{ color: "black" }}>
+				企画コンテスト
+			</h1>
 			<>
 				<AboutContest />
 				<VotingPeriod />
@@ -25,7 +27,7 @@ export default function Home() {
 				<Result />
 				<Award />
 			</>
-			<button type="button" className="back-button">
+			<button type="button" className={styles["back-button"]}>
 				<Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
 					企画一覧に戻る
 				</Link>
