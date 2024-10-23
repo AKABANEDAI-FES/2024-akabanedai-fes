@@ -12,7 +12,7 @@
 	text-decoration: underline;
 }
 
-h1 {
+.h1 {
 	color: #000000;
 	font-size: 72px;
 	margin: 100px;
@@ -20,7 +20,7 @@ h1 {
 	font-family: "BIZUDMincho-Regular", sans-serif;
 }
 
-strong {
+.strong {
 	color: #444444;
 	font-size: 36px;
 }

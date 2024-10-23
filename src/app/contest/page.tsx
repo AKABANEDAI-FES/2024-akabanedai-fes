@@ -1,4 +1,4 @@
-import "./contest.module.css";
+import styles from "./contest.module.css";
 import Link from "next/link";
 import { AboutContest } from "../../components/site/contest/about-contest/page";
 import { Award } from "../../components/site/contest/award/page";
