@@ -3,7 +3,7 @@
 }
 
 .heading {
-	color: #000000;
+	color: var(--color-text);
 	font-size: 48px;
 	margin: 10px;
 	padding-left: 10px;
@@ -12,7 +12,6 @@
 
 .p {
 	font-size: 30px;
-	color: #444444;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 20px;
@@ -29,7 +28,6 @@
 .p-award {
 	display: block;
 	font-size: 30px;
-	color: #444444;
 	margin-left: 60px;
 	margin-top: 20px;
 	margin-bottom: 20px;

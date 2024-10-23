@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { AboutContest } from "../../components/site/contest/about-contest/page";
 import { Award } from "../../components/site/contest/award/page";
 import { HowToVote } from "../../components/site/contest/how-to-vote/page";
@@ -9,29 +8,12 @@ import styles from "./contest.module.css";
 export default function Home() {
 	return (
 		<div className={styles.pageall}>
-			<nav className={styles.breadcrumb}>
-				<h2>
-					<a href="/" style={{ color: "black" }}>
-						企画一覧
-					</a>{" "}
-					&gt; 企画コンテスト
-				</h2>
-			</nav>
-			<h1 className={styles.h1} style={{ color: "black" }}>
-				企画コンテスト
-			</h1>
-			<>
-				<AboutContest />
-				<VotingPeriod />
-				<HowToVote />
-				<Result />
-				<Award />
-			</>
-			<button type="button" className={styles["back-button"]}>
-				<Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
-					企画一覧に戻る
-				</Link>
-			</button>
+			<h1 className={styles.h1}>企画コンテスト</h1>
+			<AboutContest />
+			<VotingPeriod />
+			<HowToVote />
+			<Result />
+			<Award />
 		</div>
 	);
 }

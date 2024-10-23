@@ -17,15 +17,14 @@
 }
 
 .h1 {
-	color: #000000;
+	color: var(--color-text);
 	font-size: 72px;
 	margin: 100px;
 	text-align: center;
-	font-family: "BIZUDMincho-Regular", sans-serif;
+	font-family: var(--font-serif);
 }
 
 .strong {
-	color: #444444;
 	font-size: 36px;
 }
 
