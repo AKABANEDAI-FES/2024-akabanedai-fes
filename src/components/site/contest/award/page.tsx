@@ -1,5 +1,4 @@
-"use client";
-import "../contest.css";
+import "../contest.module.css";
 
 export function Award() {
 	return (

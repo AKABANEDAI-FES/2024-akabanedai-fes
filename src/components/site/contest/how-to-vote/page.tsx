@@ -1,4 +1,4 @@
-import "../contest.css";
+import "../contest.module.css";
 
 export function HowToVote() {
 	return (
