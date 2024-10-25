@@ -1,7 +1,6 @@
 import { ClockIcon } from "@/components/icons/clock";
 import { FamilyIcon } from "@/components/icons/family";
 import { LocationIcon } from "@/components/icons/location";
-import { Popover } from "@/components/site/popover";
 import { ProgramTag } from "@/components/site/program-tag";
 import { getProgramByTitle, getPrograms } from "@/utils/program";
 import { buildPath } from "@/utils/url";
@@ -9,6 +8,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
+import { PracticeGroupDescription } from "./practice-group-description";
 
 function encodeTitle(title: string) {
 	const prod = process.env.NODE_ENV === "production";
@@ -52,7 +52,7 @@ export default function Page({
 	if (!program) {
 		notFound();
 	}
-	const isTraining = /^実習/.test(program.organization);
+	const isPractice = /^実習/.test(program.organization);
 	return (
 		<div className={styles.container}>
 			<div className={styles.program}>
@@ -80,9 +80,11 @@ export default function Page({
 						<FamilyIcon className={styles.icon} />
 						{program.age}
 					</p>
-					<div className={isTraining ? styles.popover : styles.notTraining}>
-						<Popover />
-					</div>
+					{isPractice && (
+						<div className={styles.popover}>
+							<PracticeGroupDescription />
+						</div>
+					)}
 				</div>
 				<div className={styles["program-tag"]}>
 					{program.tags.map((tag) => (
