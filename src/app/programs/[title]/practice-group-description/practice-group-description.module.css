@@ -1,0 +1,65 @@
+.trigger {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.icon {
+	background-color: #f27166;
+	color: var(--color-fill);
+	border-radius: 50%;
+	padding: 4px;
+}
+
+.icon svg {
+	width: 14px;
+	height: 14px;
+}
+
+.positioner {
+	position: relative;
+}
+
+.content {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 90vw;
+	max-width: 420px;
+	padding: 16px;
+}
+
+.content[data-state="open"]:global {
+	animation: fade-in 0.2s ease-in-out;
+}
+
+.content[data-state="closed"]:global {
+	animation: fade-out 0.2s ease-in-out;
+}
+
+.content[hidden] {
+	display: none;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.description {
+	font-size: 14px;
+}
+
+.close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.close svg {
+	width: 16px;
+	height: 16px;
+}

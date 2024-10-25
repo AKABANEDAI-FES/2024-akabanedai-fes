@@ -1,0 +1,1 @@
+export { QuestionIcon } from "./question";

@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
+import { PracticeGroupDescription } from "./practice-group-description";
 
 function encodeTitle(title: string) {
 	const prod = process.env.NODE_ENV === "production";
@@ -51,7 +52,7 @@ export default function Page({
 	if (!program) {
 		notFound();
 	}
-
+	const isPractice = /^実習/.test(program.organization);
 	return (
 		<div className={styles.container}>
 			<div className={styles.program}>
@@ -79,6 +80,11 @@ export default function Page({
 						<FamilyIcon className={styles.icon} />
 						{program.age}
 					</p>
+					{isPractice && (
+						<div className={styles.popover}>
+							<PracticeGroupDescription />
+						</div>
+					)}
 				</div>
 				<div className={styles["program-tag"]}>
 					{program.tags.map((tag) => (

@@ -92,3 +92,8 @@
 		row-gap: 32px;
 	}
 }
+
+.popover {
+	display: flex;
+	justify-content: flex-end;
+}
