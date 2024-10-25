@@ -1,4 +1,3 @@
-/* Popover.module.css */
 .popoverContainer {
 	position: relative;
 	display: inline-block;
@@ -16,7 +15,8 @@
 	top: 100%;
 	left: 50%;
 	transform: translateX(-75%);
-	background-color: var(--color-disabled);
+	background-color: var(--color-fill);
+	border: solid var(--color-secondary);
 	padding: 20px;
 	width: 200%;
 }
