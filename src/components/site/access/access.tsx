@@ -1,6 +1,5 @@
 import banner from "@/assets/banesutabanner.png";
 import Image from "next/image";
-import Link from "next/link";
 import { Heading } from "../heading";
 import { Section } from "../section";
 import styles from "./access.module.css";
@@ -39,9 +38,13 @@ export function Access() {
 					</p>
 					<div className={styles.banner}>
 						<small>【PR】</small>
-						<Link href="/stamp" target="_blank">
+						<a
+							href="https://akabanedai-fes.com/08/stamp/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<Image src={banner.src} width={300} height={100} alt="バナー" />
-						</Link>
+						</a>
 						<small>
 							デジタルスタンプラリーは先行開催中！
 							<br />
