@@ -37,7 +37,7 @@ export function Access() {
 						※駐車場のご用意はございません。また駐輪場は数に限りがございます。ご来場の際は、できる限り公共交通機関をご利用ください。
 					</p>
 					<div className={styles.banner}>
-						<small>【PR】</small>
+						<small>【おすすめ企画】</small>
 						<a
 							href="https://akabanedai-fes.com/08/stamp/"
 							target="_blank"
