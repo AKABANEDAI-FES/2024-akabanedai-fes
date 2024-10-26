@@ -1,3 +1,6 @@
+import banner from "@/assets/banesutabanner.png";
+import Image from "next/image";
+import Link from "next/link";
 import { Heading } from "../heading";
 import { Section } from "../section";
 import styles from "./access.module.css";
@@ -34,6 +37,17 @@ export function Access() {
 					<p>
 						※駐車場のご用意はございません。また駐輪場は数に限りがございます。ご来場の際は、できる限り公共交通機関をご利用ください。
 					</p>
+					<div className={styles.banner}>
+						<small>【PR】</small>
+						<Link href="/stamp" target="_blank">
+							<Image src={banner.src} width={300} height={100} alt="バナー" />
+						</Link>
+						<small>
+							デジタルスタンプラリーは先行開催中！
+							<br />
+							複数の商業施設でスタンプを集めながら大学祭に行こう！
+						</small>
+					</div>
 				</div>
 			</div>
 		</Section>
