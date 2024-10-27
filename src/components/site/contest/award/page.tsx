@@ -12,31 +12,31 @@ export function Award() {
 				<strong>グランプリ</strong>
 				<br />
 				<span className={styles["p-award"]}>
-					赤羽台祭に参加している、大学生主体のすべての企画の中から、1位、2位、3位を決定します。
+					赤羽台祭に参加する、大学生主体のすべての企画の中から、1位、2位、3位を決定します。
 				</span>
 				<br />
 				<strong>チーム実習部門</strong>
 				<br />
 				<span className={styles["p-award"]}>
-					INIADの学部3年生による「情報連携チーム実習」の団体企画を対象とします。
+					INIAD学部3年生による「情報連携チーム実習」の団体企画を対象とした部門です。
 				</span>
 				<br />
-				<strong>食品部門</strong>
+				<strong>実行委員会部門</strong>
 				<br />
 				<span className={styles["p-award"]}>
-					屋台企画などの、食品や飲料を販売する企画を対象とします。
+					「赤羽台祭実行委員会」に所属する団体の企画を対象とした部門です。
 				</span>
 				<br />
-				<strong>ステージ部門</strong>
+				<strong>研究室・ゼミ部門</strong>
 				<br />
 				<span className={styles["p-award"]}>
-					WELLBメインステージおよびINIADホールで公演を行う企画を対象とします。
+					「ゼミ」または「研究室」に所属する団体の企画を対象とした部門です。
 				</span>
 				<br />
 				<strong>サークル部門</strong>
 				<br />
 				<span className={styles["p-award"]}>
-					サークル団体による企画を対象とします。
+					「サークル」やその他の学生団体による企画を対象とした部門です。
 				</span>
 			</p>
 		</div>
