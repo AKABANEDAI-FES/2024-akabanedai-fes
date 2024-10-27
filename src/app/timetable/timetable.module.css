@@ -1,0 +1,29 @@
+.title {
+	text-align: center;
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	margin: 4%;
+	font-family: var(--font-serif);
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.image {
+	margin: 0 auto 100px auto;
+	width: 550px;
+}
+
+.attention {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.item {
+	margin: 0 7%;
+	text-indent: -1em;
+	margin-bottom: 20px;
+}
