@@ -18,7 +18,9 @@ export function VotingPeriod() {
 					<time dateTime="2024-11-03T12:00">11月3日 12:00</time> ~
 					<time dateTime="2024-11-03T15:00">15:00</time>
 				</span>
-				<br />※ スケジュールは都合により一部変更になる可能性があります。
+				<br />
+				<br />
+				※ スケジュールは都合により一部変更になる可能性があります。
 			</p>
 		</div>
 	);
