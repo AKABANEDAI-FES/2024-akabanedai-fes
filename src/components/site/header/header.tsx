@@ -17,7 +17,7 @@ const navigation = [
 	},
 	{
 		title: "タイムテーブル",
-		href: undefined,
+		href: "/timetable",
 	},
 	{
 		title: "公式グッズ販売",
