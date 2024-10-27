@@ -1,8 +1,8 @@
 .container {
 	background: linear-gradient(
 		to bottom,
-		rgba(var(--color-red), 0),
-		rgba(var(--color-red), 1)
+		rgba(var(--color-primary-value), 0),
+		rgba(var(--color-primary-value), 1)
 	);
 	padding-inline: clamp(1rem, -0.143rem + 2.86vw, 2rem);
 }

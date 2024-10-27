@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 60px;
-	color: var(--color-fill);
+	color: var(--color-text-fill);
 	background-color: var(--color-primary);
 	font-family: var(--font-serif);
 	padding-top: 80px;

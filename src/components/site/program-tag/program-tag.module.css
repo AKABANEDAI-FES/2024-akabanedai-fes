@@ -4,7 +4,7 @@
 	justify-content: center;
 	color: var(--color-secondary);
 	border: 1px solid var(--color-secondary);
-	background-color: var(--color-fill);
+	background-color: var(--color-bg-emphasis);
 	border-radius: 4px;
 }
 
@@ -20,5 +20,5 @@
 
 .program-tag[aria-pressed="true"] {
 	background-color: var(--color-secondary);
-	color: var(--color-fill);
+	color: var(--color-text-fill);
 }

@@ -52,7 +52,7 @@
 	display: grid;
 	place-content: center;
 	background-color: var(--color-secondary);
-	color: var(--color-fill);
+	color: var(--color-text-fill);
 }
 
 .right {
