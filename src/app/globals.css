@@ -2,22 +2,22 @@
 
 @import url("reset.css") layer(reset);
 
-@view-transition {
-	/* biome-ignore lint/correctness/noUnknownProperty: */
-	navigation: auto;
-}
-
 @layer base {
 	:root {
-		--color-red: 150, 23, 23;
-		--color-blue: 43, 94, 115;
-		--color-white: 254, 248, 236;
+		--color-primary-value: 150, 23, 23;
+		--color-secondary-value: 43, 94, 115;
+		--color-base-value: 254, 248, 236;
 
-		--color-primary: rgb(var(--color-red));
-		--color-secondary: rgb(var(--color-blue));
-		--color-base: rgb(var(--color-white));
+		--color-primary: rgb(var(--color-primary-value));
+		--color-secondary: rgb(var(--color-secondary-value));
+		--color-base: rgb(var(--color-base-value));
+
 		--color-text: #000;
-		--color-fill: #fff;
+		--color-text-fill: #fff;
+
+		--color-bg: var(--color-base);
+		--color-bg-emphasis: #fff;
+
 		--color-disabled: #ccc;
 
 		--font-sans: sans-serif;

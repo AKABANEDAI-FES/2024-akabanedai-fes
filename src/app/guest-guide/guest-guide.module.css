@@ -11,7 +11,7 @@
 .request {
 	max-width: 1100px;
 	margin: auto;
-	background-color: var(--color-fill);
+	background-color: var(--color-bg-emphasis);
 	border: solid var(--color-secondary) 3px;
 	border-radius: 2px;
 	padding: 20px;
@@ -30,12 +30,12 @@
 	width: 70%;
 	margin: auto;
 	padding: 20px;
-	background-color: var(--color-fill);
+	background-color: var(--color-bg-emphasis);
 	padding-left: 40px;
 }
 
 .link {
-	color: rgba(var(--color-blue), 0.85);
+	color: rgba(var(--color-secondary-value), 0.85);
 	font-weight: bold;
 	transition: 0.2s;
 }

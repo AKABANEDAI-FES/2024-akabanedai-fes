@@ -52,7 +52,7 @@
 	display: grid;
 	place-content: center;
 	background-color: var(--color-secondary);
-	color: var(--color-fill);
+	color: var(--color-text-fill);
 }
 
 .right {
@@ -60,5 +60,5 @@
 	align-items: center;
 	padding-inline: 8px;
 	padding-block: 4px;
-	background-color: #fff;
+	background-color: var(--color-bg-emphasis);
 }
