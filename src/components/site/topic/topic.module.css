@@ -1,0 +1,32 @@
+.carousel {
+	max-width: 1024px;
+	margin-inline: auto;
+}
+
+.topic-card {
+	display: block;
+	position: relative;
+	aspect-ratio: 3 / 4;
+	border: var(--color-primary) 8px solid;
+	background-color: var(--color-bg-emphasis);
+	margin-inline: 8px;
+}
+
+.topic-card img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: bottom;
+}
+
+.topic-card h3 {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	writing-mode: vertical-rl;
+	color: var(--color-primary);
+	font-family: var(--font-serif);
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
