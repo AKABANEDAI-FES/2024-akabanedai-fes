@@ -22,3 +22,8 @@
 	max-width: 1200px;
 	margin-inline: auto;
 }
+
+.image {
+	height: 300px;
+	object-fit: contain;
+}
