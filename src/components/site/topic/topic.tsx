@@ -6,6 +6,7 @@ import stage from "@/assets/topic_stage.png";
 import stall from "@/assets/topic_stall.png";
 import student from "@/assets/topic_student.png";
 import study from "@/assets/topic_study.png";
+import { Button } from "@/components/ui/button";
 import { Carousel } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
@@ -57,6 +58,11 @@ export function Topic() {
 				</Carousel.Viewport>
 				<Carousel.Indicator />
 			</Carousel.Root>
+			<div className={styles["btn-container"]}>
+				<Button size="xl" asChild={true}>
+					<Link href="/programs">企画一覧へ</Link>
+				</Button>
+			</div>
 		</Section>
 	);
 }

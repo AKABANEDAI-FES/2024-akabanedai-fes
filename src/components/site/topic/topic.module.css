@@ -30,3 +30,8 @@
 	font-weight: 600;
 	letter-spacing: 0.1em;
 }
+
+.btn-container {
+	display: grid;
+	place-items: center;
+}
