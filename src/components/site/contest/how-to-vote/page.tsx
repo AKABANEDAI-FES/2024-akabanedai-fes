@@ -1,7 +1,7 @@
-import styles from "../contest.module.css";
 import Image from "next/image";
-import contest_vote_map_INIAD from "../../../../../public/contest_vote_map_INIAD.png";
-import contest_vote_map_WELLB from "../../../../../public/contest_vote_map_WELLB.png";
+import contestVoteMapIniad from "../../../../../public/contest_vote_map_INIAD.png";
+import contestVoteMapWellb from "../../../../../public/contest_vote_map_WELLB.png";
+import styles from "../contest.module.css";
 
 export function HowToVote() {
 	return (
@@ -18,22 +18,25 @@ export function HowToVote() {
 			<div className={styles.imagewrapper}>
 				<figure className={styles.figure}>
 					<Image
-						src={contest_vote_map_INIAD}
+						src={contestVoteMapIniad}
 						alt="企画コンテストの投票所マップ(INIAD)"
 						className={styles.image}
 					/>
-					<figcaption className={styles.caption}>投票所マップ(INIAD)</figcaption>
+					<figcaption className={styles.caption}>
+						投票所マップ(INIAD)
+					</figcaption>
 				</figure>
 				<figure className={styles.figure}>
 					<Image
-						src={contest_vote_map_WELLB}
+						src={contestVoteMapWellb}
 						alt="企画コンテストの投票所マップ(WELLB)"
 						className={styles.image}
 					/>
-					<figcaption className={styles.caption}>投票所マップ(WELLB)</figcaption>
+					<figcaption className={styles.caption}>
+						投票所マップ(WELLB)
+					</figcaption>
 				</figure>
 			</div>
 		</div>
 	);
 }
-

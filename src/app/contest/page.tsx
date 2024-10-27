@@ -9,10 +9,14 @@ export default function Home() {
 	return (
 		<div className={styles.pageall}>
 			<h1 className={styles.h1}>企画コンテスト</h1>
-			<AboutContest />< br/>
-			<VotingPeriod />< br />
-			<HowToVote />< br />
-			<Result />< br />
+			<AboutContest />
+			<br />
+			<VotingPeriod />
+			<br />
+			<HowToVote />
+			<br />
+			<Result />
+			<br />
 			<Award />
 		</div>
 	);
