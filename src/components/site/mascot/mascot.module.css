@@ -60,5 +60,5 @@
 	align-items: center;
 	padding-inline: 8px;
 	padding-block: 4px;
-	background-color: #fff;
+	background-color: var(--color-bg-emphasis);
 }

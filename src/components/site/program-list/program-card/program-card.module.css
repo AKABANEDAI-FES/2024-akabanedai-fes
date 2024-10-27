@@ -10,7 +10,7 @@
 	row-gap: 4px;
 	color: var(--color-primary);
 	border: 2px solid var(--color-primary);
-	background-color: #fff;
+	background-color: var(--color-bg-emphasis);
 	border-radius: 8px;
 	transition: transform 0.2s;
 }

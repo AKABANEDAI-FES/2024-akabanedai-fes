@@ -22,7 +22,7 @@
 }
 
 .link {
-	background-color: #fff;
+	background-color: var(--color-bg-emphasis);
 	height: 100px;
 	padding: 16px;
 }
@@ -34,7 +34,7 @@
 }
 
 .without-logo {
-	background-color: #fff;
+	background-color: var(--color-bg-emphasis);
 	padding: 16px;
 }
 
