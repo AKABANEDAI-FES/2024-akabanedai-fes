@@ -20,7 +20,6 @@ export function Button({ className, size = "md", ...props }: Props) {
 	return (
 		<ark.button
 			className={clsx(styles.btn, variant.size[size], className)}
-			data-size={size}
 			{...props}
 		/>
 	);
