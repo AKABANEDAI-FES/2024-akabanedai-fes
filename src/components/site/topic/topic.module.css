@@ -10,6 +10,7 @@
 	border: var(--color-primary) 8px solid;
 	background-color: var(--color-bg-emphasis);
 	margin-inline: 8px;
+	user-select: none;
 }
 
 .topic-card img {
