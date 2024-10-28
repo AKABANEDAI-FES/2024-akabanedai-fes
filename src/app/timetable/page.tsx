@@ -28,8 +28,7 @@ export default function Page() {
 					※タイムテーブルは変更になる場合がございます。ご了承ください。
 				</p>
 				<p className={styles.item}>
-					※INIAD卒業性対象イベントはINIAD卒業生対象イベントはINIAD
-					HUB-1の2階学生食堂で開催しています。
+					※INIAD卒業生対象イベントはINIAD HUB-1の2階学生食堂で開催しています。
 				</p>
 			</div>
 		</>
