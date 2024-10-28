@@ -22,7 +22,7 @@ const navigation = [
 	},
 	{
 		title: "企画コンテスト",
-		href: undefined,
+		href: "/contest",
 	},
 	{
 		title: "ご来場の皆様へ",
