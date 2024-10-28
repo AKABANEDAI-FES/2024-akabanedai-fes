@@ -15,7 +15,7 @@ export default function OfficialMerch() {
 			<div className={styles.content}>
 				<div className={styles.request}>
 					<p className={styles.requestItem}>
-						東洋大学川越キャンパスの大学祭実行委員会キャラクターと赤羽台祭キャラクターのコラボオリジナルグッズです。各キャンパスでしか手に入らない限定品となってます！！
+						東洋大学川越キャンパスの50周年記念キャラクターと赤羽台祭キャラクターのコラボオリジナルグッズです。各キャンパスでしか手に入らない限定品となってます！！
 					</p>
 				</div>
 				<div className={styles.description}>
