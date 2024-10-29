@@ -22,7 +22,7 @@ export function HowToVote() {
 						alt="企画コンテストの投票所マップ(INIAD)"
 						className={styles.image}
 					/>
-					<figcaption className={styles.caption}>
+					<figcaption className={styles.caption_INI}>
 						投票所マップ(INIAD)
 					</figcaption>
 				</figure>
@@ -32,7 +32,7 @@ export function HowToVote() {
 						alt="企画コンテストの投票所マップ(WELLB)"
 						className={styles.image}
 					/>
-					<figcaption className={styles.caption}>
+					<figcaption className={styles.caption_WEL}>
 						投票所マップ(WELLB)
 					</figcaption>
 				</figure>
