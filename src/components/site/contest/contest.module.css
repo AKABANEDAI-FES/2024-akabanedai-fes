@@ -6,14 +6,13 @@
 
 .heading {
 	color: var(--color-text);
-	font-size: 40px;
+	font-size: 36px;
 	margin: 10px;
 	padding-left: 10px;
 	border-left: 15px solid #f27166;
 }
 
 .p {
-	font-size: 20px;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 20px;
@@ -30,7 +29,6 @@
 
 .p-award {
 	display: block;
-	font-size: 30px;
 	margin-left: 60px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -56,7 +54,6 @@
 
 .caption {
 	margin-top: 1px;
-	font-size: 20px;
 	text-align: center;
 }
 
@@ -67,14 +64,12 @@
 	}
 
 	.heading {
-		font-size: 28px; /* 見出しを縮小 */
 		margin: 5px;
 		padding-left: 8px;
 		border-left-width: 10px;
 	}
 
 	.p {
-		font-size: 16px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -84,11 +79,6 @@
 	.p-award {
 		margin-left: 20px;
 		margin-right: 20px;
-		font-size: 18px; /* テキストを少し縮小 */
-	}
-
-	.p-award {
-		font-size: 24px;
 	}
 
 	.imagewrapper {
@@ -98,9 +88,5 @@
 
 	.figure {
 		max-width: 100%; /* スマホ画面にフィットするように */
-	}
-
-	.caption {
-		font-size: 16px;
 	}
 }
