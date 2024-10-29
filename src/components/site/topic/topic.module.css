@@ -36,3 +36,10 @@
 	display: grid;
 	place-items: center;
 }
+
+.content {
+	margin: 30px auto;
+	max-width: 400px;
+	display: flex;
+	justify-content: space-around;
+}

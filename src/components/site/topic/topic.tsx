@@ -58,10 +58,19 @@ export function Topic() {
 				</Carousel.Viewport>
 				<Carousel.Indicator />
 			</Carousel.Root>
-			<div className={styles["btn-container"]}>
-				<Button size="xl" asChild={true}>
-					<Link href="/programs">企画一覧へ</Link>
-				</Button>
+			<div className={styles.content}>
+				<div className={styles["btn-container"]}>
+					<Button size="xl" asChild={true}>
+						<Link href="/programs">企画一覧へ</Link>
+					</Button>
+				</div>
+				<div className={styles["btn-container"]}>
+					<Button size="xl" asChild={true}>
+						<a href="8thpamphlet.pdf" target="_blank" rel="noreferrer">
+							パンフレット
+						</a>
+					</Button>
+				</div>
 			</div>
 		</Section>
 	);
