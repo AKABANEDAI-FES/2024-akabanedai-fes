@@ -66,9 +66,9 @@ export function Topic() {
 				</div>
 				<div className={styles["btn-container"]}>
 					<Button size="xl" asChild={true}>
-						<Link href="8thpamphlet.pdf" target="_blank">
+						<a href="8thpamphlet.pdf" target="_blank" rel="noreferrer">
 							パンフレット
-						</Link>
+						</a>
 					</Button>
 				</div>
 			</div>
