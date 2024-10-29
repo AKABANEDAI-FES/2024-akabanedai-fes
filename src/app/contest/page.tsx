@@ -8,16 +8,18 @@ import styles from "./contest.module.css";
 export default function Home() {
 	return (
 		<div className={styles.pageall}>
-			<h1 className={styles.h1}>企画コンテスト</h1>
-			<AboutContest />
-			<br />
-			<VotingPeriod />
-			<br />
-			<HowToVote />
-			<br />
-			<Result />
-			<br />
-			<Award />
+			<div className={styles.content}>
+				<h1 className={styles.h1}>企画コンテスト</h1>
+				<AboutContest />
+				<br />
+				<VotingPeriod />
+				<br />
+				<HowToVote />
+				<br />
+				<Result />
+				<br />
+				<Award />
+			</div>
 		</div>
 	);
 }
