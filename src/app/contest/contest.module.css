@@ -1,0 +1,29 @@
+/* contest.module.css */
+
+.pageall {
+	margin: auto;
+	max-width: 1000px;
+}
+.content {
+	margin: 10px;
+}
+
+/* スマホ対応のための基本設定 */
+.h1 {
+	color: var(--color-text);
+	font-size: clamp(2rem, 1.571rem + 2.29vw, 3rem);
+	margin: 70px;
+	text-align: center;
+	font-family: var(--font-serif);
+}
+
+/* スマホ対応スタイル */
+@media (max-width: 768px) {
+	.pageall {
+		margin: 5px; /* スマホで余白を縮小 */
+	}
+
+	.h1 {
+		margin: 40px; /* 上下の余白を調整 */
+	}
+}

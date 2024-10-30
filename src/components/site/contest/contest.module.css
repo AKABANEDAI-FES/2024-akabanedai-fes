@@ -1,0 +1,101 @@
+/* contest.module.css */
+
+.pageall {
+	margin: 10px;
+}
+
+.heading {
+	color: var(--color-text);
+	font-size: 32px;
+	margin: 10px;
+	padding-left: 10px;
+	border-left: 15px solid #f27166;
+}
+
+.p {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.p-date {
+	margin: 30px;
+}
+
+.p-date2 {
+	margin-left: 50px;
+}
+
+.p-award {
+	display: block;
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.strong {
+	font-size: 24px;
+}
+
+.imagewrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.figure {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	width: 100%;
+	margin: 50px;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+}
+
+.caption_INI {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.caption_WEL {
+	margin-top: 40px;
+	text-align: center;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+	.pageall {
+		margin: 5px;
+	}
+
+	.heading {
+		margin: 5px;
+		padding-left: 8px;
+		border-left-width: 10px;
+	}
+
+	.p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.p-date,
+	.p-date2,
+	.p-award {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.imagewrapper {
+		flex-direction: column; /* スマホで画像を縦に並べる */
+		align-items: center;
+	}
+
+	.figure {
+		max-width: 100%; /* スマホ画面にフィットするように */
+	}
+}
