@@ -1,6 +1,6 @@
+import contestVoteMapIniad from "@/assets/contest_vote_map_INIAD.png";
+import contestVoteMapWellb from "@/assets/contest_vote_map_WELLB.png";
 import Image from "next/image";
-import contestVoteMapIniad from "../../../../../public/contest_vote_map_INIAD.png";
-import contestVoteMapWellb from "../../../../../public/contest_vote_map_WELLB.png";
 import styles from "../contest.module.css";
 
 export function HowToVote() {

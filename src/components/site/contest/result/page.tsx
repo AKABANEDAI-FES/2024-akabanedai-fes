@@ -1,5 +1,4 @@
 import styles from "../contest.module.css";
-("../contest.module.css");
 
 export function Result() {
 	return (

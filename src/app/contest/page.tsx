@@ -1,8 +1,8 @@
-import { AboutContest } from "../../components/site/contest/about-contest/page";
-import { Award } from "../../components/site/contest/award/page";
-import { HowToVote } from "../../components/site/contest/how-to-vote/page";
-import { Result } from "../../components/site/contest/result/page";
-import { VotingPeriod } from "../../components/site/contest/voting-period/page";
+import { AboutContest } from "@/components/site/contest/about-contest/page";
+import { Award } from "@/components/site/contest/award/page";
+import { HowToVote } from "@/components/site/contest/how-to-vote/page";
+import { Result } from "@/components/site/contest/result/page";
+import { VotingPeriod } from "@/components/site/contest/voting-period/page";
 import styles from "./contest.module.css";
 
 export default function Home() {
