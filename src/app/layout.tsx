@@ -42,9 +42,9 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			{process.env.GA_ID && <GoogleAnalytics gaId={process.env.GA_ID} />}
-			<body>
+			<body className={styles.background}>
 				<Header />
-				<div className={styles.background}>{children}</div>
+				{children}
 				<Footer />
 			</body>
 		</html>
