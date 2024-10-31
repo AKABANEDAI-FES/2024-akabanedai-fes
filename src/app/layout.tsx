@@ -4,7 +4,7 @@ import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { buildPath } from "@/utils/url";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import styles from "./page.module.css";
+import styles from "./layout.module.css";
 
 export const metadata: Metadata = {
 	metadataBase: process.env.METADATA_BASE

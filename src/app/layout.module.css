@@ -1,0 +1,8 @@
+.background {
+	background-image: url("../assets/background.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: center;
+	background-attachment: fixed;
+}
