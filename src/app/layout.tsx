@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { buildPath } from "@/utils/url";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
 	metadataBase: process.env.METADATA_BASE
@@ -43,7 +44,7 @@ export default function RootLayout({
 			{process.env.GA_ID && <GoogleAnalytics gaId={process.env.GA_ID} />}
 			<body>
 				<Header />
-				{children}
+				<div className={styles.background}>{children}</div>
 				<Footer />
 			</body>
 		</html>
