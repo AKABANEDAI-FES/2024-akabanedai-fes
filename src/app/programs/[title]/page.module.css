@@ -97,3 +97,12 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
+.content {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.contest {
+	border-bottom: solid 1px;
+}
