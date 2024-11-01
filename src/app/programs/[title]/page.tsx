@@ -6,6 +6,7 @@ import { getProgramByTitle, getPrograms } from "@/utils/program";
 import { buildPath } from "@/utils/url";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 import { PracticeGroupDescription } from "./practice-group-description";
@@ -55,6 +56,11 @@ export default function Page({
 	const isPractice = /^実習/.test(program.organization);
 	return (
 		<div className={styles.container}>
+			<div className={styles.content}>
+				<Link href="/contest" className={styles.contest}>
+					企画コンテストはこちら
+				</Link>
+			</div>
 			<div className={styles.program}>
 				<h1 className={styles["program-name"]}>{program.title}</h1>
 				<Image

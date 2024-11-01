@@ -1,6 +1,7 @@
 import { ProgramList } from "@/components/site/program-list";
 import { ProgramTag } from "@/components/site/program-tag";
 import { getAllTags, getPrograms, getProgramsByTag } from "@/utils/program";
+import Link from "next/link";
 import styles from "./_page.module.css";
 
 type Props = {
@@ -29,6 +30,11 @@ export function Page({ tag }: Props) {
 
 	return (
 		<div className={styles.container}>
+			<div className={styles.content}>
+				<Link href="/contest" className={styles.contest}>
+					企画コンテストはこちら
+				</Link>
+			</div>
 			<h1 className={styles.title}>企画一覧</h1>
 			<Topics tag={tag} />
 			<div className={styles.programs}>

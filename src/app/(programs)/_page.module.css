@@ -6,7 +6,7 @@
 }
 
 .container > * {
-	margin-top: 64px;
+	margin-top: 48px;
 }
 
 .topics {
@@ -28,4 +28,13 @@
 
 .programs {
 	margin-bottom: 128px;
+}
+
+.content {
+	text-align: right;
+	margin-top: 16px;
+}
+
+.contest {
+	border-bottom: solid 1px;
 }
