@@ -41,9 +41,7 @@ export function Header() {
 	return (
 		<header className={styles.header}>
 			{pathname === "/" ? (
-				<a href="https://forms.gle/y6nZgMDspT3LUAua6" className={styles.survey}>
-					来場者アンケートはこちら
-				</a>
+				<h1 className={styles.logo}>{site}</h1>
 			) : (
 				<Link className={styles.logo} href="/" aria-label={site}>
 					{site}

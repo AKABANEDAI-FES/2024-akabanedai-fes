@@ -37,10 +37,6 @@
 	place-items: center;
 }
 
-.survey {
-	border-bottom: 1px solid var(--color-text-fill);
-}
-
 @media screen and (min-width: 880px) {
 	.header {
 		align-items: flex-end;
