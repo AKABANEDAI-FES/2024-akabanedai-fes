@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
+import { Questionnaire } from "@/components/site/questionnaire";
 import { buildPath } from "@/utils/url";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import styles from "./layout.module.css";
@@ -43,6 +44,7 @@ export default function RootLayout({
 		<html lang="ja">
 			{process.env.GA_ID && <GoogleAnalytics gaId={process.env.GA_ID} />}
 			<body className={styles.background}>
+				<Questionnaire />
 				<Header />
 				{children}
 				<Footer />
