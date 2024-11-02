@@ -36,7 +36,8 @@
 	place-content: center;
 	place-items: center;
 }
-.survey{
+
+.survey {
 	border-bottom: 1px solid var(--color-text-fill);
 }
 
