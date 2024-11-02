@@ -1,0 +1,13 @@
+.questionnaire {
+	width: 100%;
+	background: var(--color-bg);
+	padding-block: 12px;
+	padding-inline: 16px;
+	display: grid;
+	place-content: center;
+}
+
+.questionnaire a {
+	color: var(--color-secondary);
+	text-decoration: underline;
+}
