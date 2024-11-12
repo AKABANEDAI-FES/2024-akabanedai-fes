@@ -17,6 +17,18 @@
 	font-family: var(--font-serif);
 }
 
+.heading {
+	color: var(--color-text);
+	font-size: 32px;
+	margin: 10px;
+	padding-left: 10px;
+	border-left: 15px solid #f27166;
+}
+
+.result {
+	margin: 28px auto;
+}
+
 /* スマホ対応スタイル */
 @media (max-width: 768px) {
 	.pageall {
