@@ -11,3 +11,11 @@
 	color: var(--color-secondary);
 	text-decoration: underline;
 }
+
+.thanks {
+	display: inline-block;
+}
+
+.close {
+	text-align: center;
+}
